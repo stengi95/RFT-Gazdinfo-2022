@@ -51,3 +51,4 @@ A rendszer mindkét célcsoport számára egy lehetséges megoldást biztosít. 
 
 3. követelmény lista
 Jogosultság K1 -> nem szükséges bejelentkezni
+Számítás típus K2 -> 4 alapművelet használata
