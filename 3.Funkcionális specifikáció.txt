@@ -59,3 +59,4 @@ A mai világban már majdnem minden generáció képes használni a különböz�
 Ezek alól kivételt képez az idősebb genereció, akik még a napjainkban használt technológiák helyett, a régebbi "maradi" eszközökhöz fordulnak egy-egy probléma megolásával. Legtöbbször ők papír, vagy fejben számolnak amely nem túlságosan effektív.
 
 5. igényelt üzleti folyamat modellje
+Azért hogy egyszerűbbé tegyük az idősebb generáció számára a mindennapi számtani "problémák" megoldását, létrehozuk ezt az alkalmazást, amely a mai kornak megfelelően helyt áll az elektronika világában. A felhasználóknak egyszerűbb lesz a számolást elvégezen ezen program segítségével, mivel kinézete letisztult, valamint kezelése egyértelmű.
