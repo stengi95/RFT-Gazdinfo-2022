@@ -53,3 +53,6 @@ A rendszer mindkét célcsoport számára egy lehetséges megoldást biztosít. 
 Jogosultság K1 -> nem szükséges bejelentkezni
 Számítás típus K2 -> 4 alapművelet használata
 Számítási típus K3 -> százalékos kedvezmény levonása
+
+4. jelenlegi folyamat modellje
+
