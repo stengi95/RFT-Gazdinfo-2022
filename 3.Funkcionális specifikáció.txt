@@ -61,3 +61,5 @@ Ezek alól kivételt képez az idősebb genereció, akik még a napjainkban hasz
 5. igényelt üzleti folyamat modellje
 Azért hogy egyszerűbbé tegyük az idősebb generáció számára a mindennapi számtani "problémák" megoldását, létrehozuk ezt az alkalmazást, amely a mai kornak megfelelően helyt áll az elektronika világában. A felhasználóknak egyszerűbb lesz a számolást elvégezen ezen program segítségével, mivel kinézete letisztult, valamint kezelése egyértelmű.
 Ezenek felül a felhasználók segítő kezet nyújthatnak mások matematikai problémainak megoldásában, többek között az unokák házifeladatában is.
+
+6. használati esetek
