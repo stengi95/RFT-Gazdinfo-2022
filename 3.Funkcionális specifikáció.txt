@@ -56,4 +56,5 @@ Számítási típus K3 -> százalékos kedvezmény levonása
 
 4. jelenlegi folyamat modellje
 A mai világban már majdnem minden generáció képes használni a különböző új találmányokat, fejlesztéseket.
+Ezek alól kivételt képez az idősebb genereció, akik még a napjainkban használt technológiák helyett, a régebbi "maradi" eszközökhöz fordulnak egy-egy probléma megolásával. Legtöbbször ők papír, vagy fejben számolnak amely nem túlságosan effektív.
 
