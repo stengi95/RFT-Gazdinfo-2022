@@ -64,3 +64,4 @@ Ezenek felül a felhasználók segítő kezet nyújthatnak mások matematikai pr
 
 6. használati esetek
 A program teljeskörű használatóhoz a felhasználónak nem szükséges belépnie. A funkciók mindenki számára egyaránt elérhetőek és használhatóak.
+Ezek között szerepel a négy alapművelet: összeadás, kivonás, szorzás, osztás, valamint a kezdvezmények kiszámítása is.
