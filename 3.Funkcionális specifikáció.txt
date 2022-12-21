@@ -1,0 +1,41 @@
+Funkcionális Specifikáció
+
+1. Áttekintés
+● Ebben a fejezetben röviden ismertetni kell a projektünk egészét.
+
+2. Jelenlegi helyzet
+● Kifejti, hogy miért van szükség az adott alkalmazásra, de itt már nem a kifejtés mértéke és részletessége a fontos, hanem a lényegretörő, vázlatos, egyértelmű leírása.
+
+3. Követelménylista
+● Itt kell leírni azt, hogy milyen funkciókkal kell rendelkeznie a programunknak, ezeknek milyen al-funkciói vannak. 
+A követelmény specifikációhoz képest itt sokkal részletesebben és pontosabban le vannak írva a követelmények.
+
+4. Jelenlegi üzleti folyamatok modellje
+
+5. Igényelt üzleti folyamatok modellje
+
+6. Használati esetek
+● Ez a fejezet leírja pl. melyik felhasználó milyen funkciókat tud
+használni.
+
+7. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
+
+
+8. Képernyő tervek
+● A képernyő tervek mutatják meg, hogy mely funkciók kerülnek egymás mellé, melyik képernyőről mely képernyőre juthatunk.
+
+9. Forgatókönyv
+● A forgatókönyvek a rendszer egy-egy tipikus felhasználását mutatják be. A forgatókönyvnek általában van egy célja, például egy iktató rendszerben: 
+Levél érkeztetése, címzett értesítése, dokumentumtárba helyezés. A forgatókönyv bemutatja, milyen funkciókat kell használni, milyen sorrendben a kívánt cél elérése érdekében. 
+Ilyen értelem egy telepítési útmutatóhoz hasonlítanak.
+
+10.Funkció - követelmény megfeleltetés
+
+
+11.Fogalomszótár
+● A fogalomszótár a dokumentációban megemlített idegen esetleg nem egyértelmű jelentésű szavak / szakszavak pontos meghatározását írja le.
+
+_____________________________________________________________________________
+1. áttekintés
+	Egy olyan programot fejlesztettünk, amely képes a mindennapjainkban
+	előforduló matematikai alapműveletek elvégzésére.
