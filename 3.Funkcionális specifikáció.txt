@@ -63,3 +63,4 @@ Azért hogy egyszerűbbé tegyük az idősebb generáció számára a mindennapi
 Ezenek felül a felhasználók segítő kezet nyújthatnak mások matematikai problémainak megoldásában, többek között az unokák házifeladatában is.
 
 6. használati esetek
+A program teljeskörű használatóhoz a felhasználónak nem szükséges belépnie. A funkciók mindenki számára egyaránt elérhetőek és használhatóak.
