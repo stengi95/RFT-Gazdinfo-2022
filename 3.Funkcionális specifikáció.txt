@@ -50,3 +50,4 @@ Hiszen XXI.-ban már minden okostelefonon találhatunk (legtöbbször nem megfel
 A rendszer mindkét célcsoport számára egy lehetséges megoldást biztosít. Az előzetes felmérések és értékelések alapján a megrendelőink rendkívül elégedettek a szoftver prototípusával  és elmondásuk alapján már régóta vágytak egy ilyen programra. Már rengeteg számológépet kipróbáltak, kezdve egészen az interneten elérhető webes alkalmazásoktól a telefonra telepíthető androidos alkalmazásokig, azonban egyik sem váltotta be a hozzájuk fűzött reményeket.
 
 3. követelmény lista
+Jogosultság K1 -> nem szükséges bejelentkezni
