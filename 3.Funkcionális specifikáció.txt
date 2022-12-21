@@ -41,3 +41,4 @@ _____________________________________________________________________________
 	előforduló matematikai alapműveletek elvégzésére.
 Az alkalmazás kialakítása lehetővé teszi, hogy az általános iskolás korosztálytól egészen a nyugdíjasokig bárki könnyedén értelmezze és használja.
 A főként kisboltokban előforduló esetekre specializált százalékszámítás funkció, rendkívül gyorsan és pontosan határozza meg a kedvezményekkel terhelt fizetendő végösszeget.
+A szoftvert természetesen ingyenesen kívánjuk forgalmazni és minden eszközre könnyedén telepíthetővé teszzük.
