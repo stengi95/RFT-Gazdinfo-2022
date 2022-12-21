@@ -1,0 +1,39 @@
+Rendszerterv - RFT Gazdinfó 2022 csapat
+
+1. A rendszer célja
+● Leírja hogy mit szeretne megoldani a rendszer.
+
+2. Projektterv
+● Leírja a szerepköröket ,kik vannak a csapatban és min dolgoznak. Ide kerül az ütemterv és általában mérföldköveket tartalmaz.
+
+3. Üzleti folyamatok modellje
+
+4. Követelmények
+● Leírja nagyvonalakban miket kell teljesítenie a programnak.
+
+5. Funkcionális terv
+● Leírja a felhasználói szerepköröket, és hogy milyen feladatokat tudnak csinálni.
+
+6. Fizikai környezet
+● Itt kell leírni milyen platformra készül a szoftver ,mik vannak engedélyezve és milyen fejlesztői eszközöket / programokat használunk fejlesztés közben.
+
+7. Absztrakt domain modell
+
+8. Architekturális terv
+
+9. Adatbázis terv
+
+10.Implementációs terv
+● Leírja milyen technológiákat használunk hogyan és miért.
+
+11.Tesztterv
+● Leírja a tesztelés folyamatát mikor milyen tesztek lesznek elvégezve.
+
+12.Telepítési terv
+● Leírja hogyan kell telepíteni a programot.
+
+
+● Windows Applikáció
+○ A szoftver egy windows operációs rendszeren könnyedén futtatható java programnyelven írt számológép, így a futtatható program bírtokában használható.
+
+13.Karbantartási terv
