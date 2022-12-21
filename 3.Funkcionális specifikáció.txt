@@ -43,5 +43,6 @@ Az alkalmazás kialakítása lehetővé teszi, hogy az általános iskolás koro
 A főként kisboltokban előforduló esetekre specializált százalékszámítás funkció, rendkívül gyorsan és pontosan határozza meg a kedvezményekkel terhelt fizetendő végösszeget.
 A szoftvert természetesen ingyenesen kívánjuk forgalmazni és minden eszközre könnyedén telepíthetővé teszzük.
 Az alkalmazás használata közben a felhasználó csak az éppen beírt számértékeket látja a számológép "megjelenítő panelén".
+Az korábban elvégzett műveletek visszakeresésere, az ezen projekt keretében megalkotott alap verzióban egyenlőre nincs lehetősség.
 
 
