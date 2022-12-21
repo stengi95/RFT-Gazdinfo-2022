@@ -47,4 +47,4 @@ Az korábban elvégzett műveletek visszakeresésere, az ezen projekt keretében
 2. jelenlegi helyzet
 Az előzetes felmérések alapján hatlmas igény van az egyszerűen és gyorsan alkalmazható számológépre.
 Hiszen XXI.-ban már minden okostelefonon találhatunk (legtöbbször nem megfelelően műköfő) ún. okos számológépeket, amelyeknek funkcióit a felhasználok 90% sosem használja ki. Valamint a kiskereskedelemi iparban is találhatunk számos olyan kisvállalkozót, aki nem szeretne  méregdrága számológépet, magas matematikai műveletek elvégzésére alkalmas funkciókkal.
-
+A rendszer mindkét célcsoport számára egy lehetséges megoldást biztosít. Az előzetes felmérések és értékelések alapján a megrendelőink rendkívül elégedettek a szoftver prototípusával  és elmondásuk alapján már régóta vágytak egy ilyen programra. Már rengeteg számológépet kipróbáltak, kezdve egészen az interneten elérhető webes alkalmazásoktól a telefonra telepíthető androidos alkalmazásokig, azonban egyik sem váltotta be a hozzájuk fűzött reményeket.
