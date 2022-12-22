@@ -1,5 +1,8 @@
 package hu.jolka.szamologep;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author jolka
@@ -11,7 +14,7 @@ public class Szamologep extends javax.swing.JFrame {
      */
     public Szamologep() {
         initComponents();
-        eredmeny.setText("");
+        eredmeny.setText("12+13");
     }
 
     /**
@@ -343,8 +346,46 @@ public class Szamologep extends javax.swing.JFrame {
     }//GEN-LAST:event_osztasActionPerformed
 
     private void egyenloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyenloActionPerformed
-        // TODO add your handling code here:
-        System.out.println("ki kell számolni a következőt: " + eredmeny.getText());
+        //Ha az eredmény nem üres
+        if (!eredmeny.getText().trim().isEmpty()) {
+            String e = eredmeny.getText();
+            int n = e.length();
+            //Ha az utolsó karakter operátor levágjuk a végéről
+            if (isUtolsoKarakterOperator()) {
+                e = e.substring(0, n - 1);
+            }
+            //műveletbe kimentjük a kifejezést
+            korabbiMuvelet.setText(e + "=");
+
+            List<Integer> szamok = new ArrayList<>();
+            List<String> muveletiJelek = new ArrayList<>();
+            String osszefuz = "";
+            //végigmegyünk a stringen
+            for (int i = 0; i < n; i++) {
+                Character karakter = e.charAt(i);
+
+                //ha szám akkor hozzáadjuk az  összefűzőhöz
+                if (!isKarakterOperator(karakter)) {
+                    osszefuz += karakter;
+                } else {
+                    //ha karakter akkor az összefűzött szöveget számmá alakítjuk
+                    //az összefűzőt kiürítjük
+                    //a műveleti jelet pedig elmentjük
+                    szamok.add(Integer.valueOf(osszefuz));
+                    osszefuz = "";
+                    muveletiJelek.add(String.valueOf(karakter));
+                }
+
+                //ha ez az utolsó futás akkor a karaktereket számmá alakítjuk és elmentjük
+                if (i + 1 == n) {
+                    szamok.add(Integer.valueOf(osszefuz));
+                }
+
+            }
+            //leellenőrizzük, hogy miket mentettünk ki
+            System.out.println("számok: " + szamok);
+            System.out.println("műveleti jelek: " + muveletiJelek);
+        }
     }//GEN-LAST:event_egyenloActionPerformed
 
     /**
@@ -386,6 +427,18 @@ public class Szamologep extends javax.swing.JFrame {
         eredmeny.setText(eredmeny.getText() + s);
     }
 
+    private boolean isKarakterOperator(Character c) {
+        switch (String.valueOf(c)) {
+            case "+":
+            case "-":
+            case "*":
+            case "/":
+                return true;
+            default:
+                return false;
+        }
+    }
+
     private boolean isUtolsoKarakterOperator() {
         if (!eredmeny.getText().trim().isEmpty()) {
             int hossz = eredmeny.getText().length();
@@ -395,7 +448,6 @@ public class Szamologep extends javax.swing.JFrame {
                 case "-":
                 case "*":
                 case "/":
-                case ",":
                     return true;
                 default:
                     return false;
