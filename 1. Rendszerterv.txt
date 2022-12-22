@@ -89,4 +89,6 @@ _________________________________
 		4. Feladatok felosztása			                            	(4. hét - 2022.11.28)
 		5. Dokumentációk elkészítés és fejlesztés.                  		(4. hét - 9. hét - 2022.11.28 - 2023.01.07)
 		6. Adatmodell bemutatása.		                            	(9 .hét - 2023.01.07)
+
+3. Követelmények:
 			
