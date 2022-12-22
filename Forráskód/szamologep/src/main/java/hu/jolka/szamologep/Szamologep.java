@@ -349,7 +349,14 @@ public class Szamologep extends javax.swing.JFrame {
     private void egyenloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyenloActionPerformed
         //Ha az eredmény nem üres
         if (!eredmeny.getText().trim().isEmpty()) {
+
             String e = eredmeny.getText();
+
+            //ha az előző számolás eredménye tört szám a ',' karaktert '.'-ra cseréljük
+            if (e.contains(",")) {
+                e = e.replace(',', '.');
+            }
+
             int n = e.length();
             //Ha az utolsó karakter operátor levágjuk a végéről
             if (isUtolsoKarakterOperator()) {
@@ -456,9 +463,8 @@ public class Szamologep extends javax.swing.JFrame {
                 osszegString = String.format("%.2f", osszeg);
             }
 
-            //kitöröljük a bekért függvényt és átrakjuk fentre
-            eredmeny.setText("");
-            korabbiMuvelet.setText(korabbiMuvelet.getText() + osszegString);
+            //az eredményt kiírjuk, hogy további számolásokat lehessen végezni
+            eredmeny.setText(osszegString);
         }
     }//GEN-LAST:event_egyenloActionPerformed
 
