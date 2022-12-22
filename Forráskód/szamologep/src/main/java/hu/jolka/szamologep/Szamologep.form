@@ -273,6 +273,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="teljesTorles">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="33" red="ff" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Teljes t&#xf6;rl&#xe9;s"/>
       </Properties>
       <Events>
