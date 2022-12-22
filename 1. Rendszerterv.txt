@@ -97,3 +97,4 @@ _________________________________
 	felölelő adatok törlésére.
 	
 4. Funkcionális terv:
+	A program lehetőséget nyújt minden szereplő számára, hogy az alkalmazás minden egyes funkcióját megszorítások nélkül használhassa. 
