@@ -11,6 +11,7 @@ public class Szamologep extends javax.swing.JFrame {
      */
     public Szamologep() {
         initComponents();
+        eredmeny.setText("");
     }
 
     /**
@@ -43,42 +44,134 @@ public class Szamologep extends javax.swing.JFrame {
         eredmeny = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Számológép");
+        setResizable(false);
 
         ketto.setText("2");
+        ketto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kettoActionPerformed(evt);
+            }
+        });
 
         egy.setText("1");
+        egy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                egyActionPerformed(evt);
+            }
+        });
 
         harom.setText("3");
+        harom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                haromActionPerformed(evt);
+            }
+        });
 
         negy.setText("4");
+        negy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                negyActionPerformed(evt);
+            }
+        });
 
         ot.setText("5");
+        ot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                otActionPerformed(evt);
+            }
+        });
 
         torles.setText("Törlés");
+        torles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                torlesActionPerformed(evt);
+            }
+        });
 
         het.setText("7");
+        het.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hetActionPerformed(evt);
+            }
+        });
 
         nyolc.setText("8");
+        nyolc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nyolcActionPerformed(evt);
+            }
+        });
 
         hat.setText("6");
+        hat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hatActionPerformed(evt);
+            }
+        });
 
         kilenc.setText("9");
+        kilenc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kilencActionPerformed(evt);
+            }
+        });
 
         egyenlo.setText("=");
+        egyenlo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                egyenloActionPerformed(evt);
+            }
+        });
 
         vesszo.setText(",");
+        vesszo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vesszoActionPerformed(evt);
+            }
+        });
 
         hozzaadas.setText("+");
+        hozzaadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hozzaadasActionPerformed(evt);
+            }
+        });
 
         kivonas.setText("-");
+        kivonas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kivonasActionPerformed(evt);
+            }
+        });
 
         osztas.setText("/");
+        osztas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                osztasActionPerformed(evt);
+            }
+        });
 
         szorzas.setText("*");
+        szorzas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                szorzasActionPerformed(evt);
+            }
+        });
 
         nulla.setText("0");
+        nulla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nullaActionPerformed(evt);
+            }
+        });
 
         teljesTorles.setText("Teljes törlés");
+        teljesTorles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                teljesTorlesActionPerformed(evt);
+            }
+        });
 
         eredmeny.setEditable(false);
 
@@ -174,6 +267,82 @@ public class Szamologep extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void egyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyActionPerformed
+        hozzaIr("1");
+    }//GEN-LAST:event_egyActionPerformed
+
+    private void kettoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kettoActionPerformed
+        hozzaIr("2");
+    }//GEN-LAST:event_kettoActionPerformed
+
+    private void haromActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_haromActionPerformed
+        hozzaIr("3");
+    }//GEN-LAST:event_haromActionPerformed
+
+    private void nullaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nullaActionPerformed
+        hozzaIr("0");
+    }//GEN-LAST:event_nullaActionPerformed
+
+    private void negyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_negyActionPerformed
+        hozzaIr("4");
+    }//GEN-LAST:event_negyActionPerformed
+
+    private void otActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_otActionPerformed
+        hozzaIr("5");
+    }//GEN-LAST:event_otActionPerformed
+
+    private void hatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hatActionPerformed
+        hozzaIr("6");
+    }//GEN-LAST:event_hatActionPerformed
+
+    private void hetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hetActionPerformed
+        hozzaIr("7");
+    }//GEN-LAST:event_hetActionPerformed
+
+    private void nyolcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nyolcActionPerformed
+        hozzaIr("8");
+    }//GEN-LAST:event_nyolcActionPerformed
+
+    private void kilencActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kilencActionPerformed
+        hozzaIr("9");
+    }//GEN-LAST:event_kilencActionPerformed
+
+    private void torlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_torlesActionPerformed
+        if (!eredmeny.getText().trim().isEmpty()) {
+            String er = eredmeny.getText();
+            eredmeny.setText(er.substring(0, er.length() - 1));
+        }
+    }//GEN-LAST:event_torlesActionPerformed
+
+    private void teljesTorlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teljesTorlesActionPerformed
+        eredmeny.setText("");
+    }//GEN-LAST:event_teljesTorlesActionPerformed
+
+    private void vesszoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vesszoActionPerformed
+        hozzaIr(",");
+    }//GEN-LAST:event_vesszoActionPerformed
+
+    private void hozzaadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hozzaadasActionPerformed
+        hozzaIr("+");
+    }//GEN-LAST:event_hozzaadasActionPerformed
+
+    private void kivonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kivonasActionPerformed
+        hozzaIr("-");
+    }//GEN-LAST:event_kivonasActionPerformed
+
+    private void szorzasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_szorzasActionPerformed
+        hozzaIr("*");
+    }//GEN-LAST:event_szorzasActionPerformed
+
+    private void osztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_osztasActionPerformed
+        hozzaIr("/");
+    }//GEN-LAST:event_osztasActionPerformed
+
+    private void egyenloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyenloActionPerformed
+        // TODO add your handling code here:
+        System.out.println("ki kell számolni a következőt: " + eredmeny.getText());
+    }//GEN-LAST:event_egyenloActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -207,6 +376,10 @@ public class Szamologep extends javax.swing.JFrame {
                 new Szamologep().setVisible(true);
             }
         });
+    }
+
+    private void hozzaIr(String s) {
+        eredmeny.setText(eredmeny.getText() + s);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
