@@ -77,8 +77,9 @@ _________________________________
 		Feladat / Task			Prioritás	Becslés		Aktuális becslés	Eltelt idő	Hátralévő idő
 		0. Adattárolás trello & github:	1		    2		    2			     7		    2	
 		1. Rendszerterv:		2		    8		    8			     7		    2		
-		Követelmény specifikáció:	2		    8		    8			     7		    2	
-		Funkcionális specifikáció:	2		    8		    8			     7		    2	
+		2. Követelmény specifikáció:	2		    8		    8			     7		    2	
+		3. Funkcionális specifikáció:	2		    8		    8			     7		    2
+			
 		
 
 	Mérföldkövek: 
