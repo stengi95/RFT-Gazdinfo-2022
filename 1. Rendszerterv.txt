@@ -81,4 +81,12 @@ _________________________________
         	specifikáció:	                    		2		    8		    8			     7		    2	
 		Rendszerterv:					2		    8		    8			     7		    2	
 		Adattárolás:		trello/github		1		    2		    2			     7		    2	
+
+	Mérföldkövek: 
+		1. Csapatszervezés			                                (1. hét - 2022.11.07)
+		2. Közös kommunikációs felület létrehozása (Teams csoport) 		(2. hét - 2022.11.14)
+		3. Célkitűzés				                                (3. hét - 2022.11.21)
+		4. Feladatok felosztása			                            	(4. hét - 2022.11.28)
+		5. Dokumentációk elkészítés és fejlesztés.                  		(4. hét - 9. hét - 2022.11.28 - 2023.01.07)
+		6. Adatmodell bemutatása.		                            	(9 .hét - 2023.01.07)
 			
