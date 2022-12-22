@@ -320,7 +320,7 @@ public class Szamologep extends javax.swing.JFrame {
     }//GEN-LAST:event_teljesTorlesActionPerformed
 
     private void vesszoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vesszoActionPerformed
-        if (!isUtolsoKarakterOperator()) {
+        if (!isUtolsoKarakterOperator() && isUtolsoKarakterSzam()) {
             hozzaIr(",");
         }
     }//GEN-LAST:event_vesszoActionPerformed
@@ -403,6 +403,29 @@ public class Szamologep extends javax.swing.JFrame {
                 case "*":
                 case "/":
                 case ",":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+        return false;
+    }
+
+    private boolean isUtolsoKarakterSzam() {
+        if (!eredmeny.getText().trim().isEmpty()) {
+            int hossz = eredmeny.getText().length();
+            String utolsoKarakter = eredmeny.getText().substring(hossz - 1, hossz);
+            switch (utolsoKarakter) {
+                case "0":
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
                     return true;
                 default:
                     return false;
