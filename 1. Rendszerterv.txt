@@ -68,9 +68,9 @@ _________________________________
 			Feladata elkészíteni a funkcionális specifikácuó dokumentációját.
 
 		- Megyesiné Tamási Jolán Judit 	- forráskód
-			Feladata a program lekódolása, tesztelése és átadása.
-			A fejlesztés alatt felmerülő esetleges hibák elhárítása érdekében magasfokú együttműködés és fejlesztés projekt végén közös tesztelés.
-		
+			Feladata a program lekódolása és tesztelésre átadása.
+
+		A fejlesztés alatt felmerülő esetleges hibák elhárítása érdekében magasfokú együttműködés és fejlesztés végén közös tesztelés a projekt résztvevőivel.
 		Továbbá, a fentemlített projekt dokumentumok minden érintettje számára elérhető, és jól követhető felületen történő tárolása.(github)		
 
 	Ütemterv:
