@@ -50,3 +50,11 @@ _________________________________
     A sokoldalúság és a hozzáférhetőség jegyében azonban, célunk a letöbb platformra implementálni az applikációt,
     azonban, elsőre csak windows operációs rendszeren lesz elérhető.
 
+2. Projektterv
+
+	Projekt szereokörök, felelősségek:
+		Scrum/Kanban master: Stenger Márton (trello)
+		Product owner: Rft Kft.
+	
+
+			
