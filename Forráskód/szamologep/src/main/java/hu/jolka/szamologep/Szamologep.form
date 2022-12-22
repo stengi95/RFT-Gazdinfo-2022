@@ -253,7 +253,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="szorzas">
       <Properties>
-        <Property name="text" type="java.lang.String" value="*"/>
+        <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="szorzasActionPerformed"/>

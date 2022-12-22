@@ -1,6 +1,7 @@
 package hu.jolka.szamologep;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ public class Szamologep extends javax.swing.JFrame {
      */
     public Szamologep() {
         initComponents();
-        eredmeny.setText("12+13");
+        eredmeny.setText("11X39X428/178X1/12+30-11");
     }
 
     /**
@@ -149,7 +150,7 @@ public class Szamologep extends javax.swing.JFrame {
             }
         });
 
-        szorzas.setText("*");
+        szorzas.setText("X");
         szorzas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 szorzasActionPerformed(evt);
@@ -335,7 +336,7 @@ public class Szamologep extends javax.swing.JFrame {
 
     private void szorzasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_szorzasActionPerformed
         if (!isUtolsoKarakterOperator()) {
-            hozzaIr("*");
+            hozzaIr("X");
         }
     }//GEN-LAST:event_szorzasActionPerformed
 
@@ -357,7 +358,7 @@ public class Szamologep extends javax.swing.JFrame {
             //műveletbe kimentjük a kifejezést
             korabbiMuvelet.setText(e + "=");
 
-            List<Integer> szamok = new ArrayList<>();
+            List<Double> szamok = new ArrayList<>();
             List<String> muveletiJelek = new ArrayList<>();
             String osszefuz = "";
             //végigmegyünk a stringen
@@ -371,20 +372,93 @@ public class Szamologep extends javax.swing.JFrame {
                     //ha karakter akkor az összefűzött szöveget számmá alakítjuk
                     //az összefűzőt kiürítjük
                     //a műveleti jelet pedig elmentjük
-                    szamok.add(Integer.valueOf(osszefuz));
+                    szamok.add(Double.valueOf(osszefuz));
                     osszefuz = "";
                     muveletiJelek.add(String.valueOf(karakter));
                 }
 
                 //ha ez az utolsó futás akkor a karaktereket számmá alakítjuk és elmentjük
                 if (i + 1 == n) {
-                    szamok.add(Integer.valueOf(osszefuz));
+                    szamok.add(Double.valueOf(osszefuz));
                 }
 
             }
-            //leellenőrizzük, hogy miket mentettünk ki
+
+            int elvegzettMuveletek = 0;
+            //végigmegyünk a műveleti jeleken
+            for (int i = 0; i < muveletiJelek.size(); i++) {
+                String jel = muveletiJelek.get(i);
+                if (jel.equals("X") || jel.equals("/")) {
+                    double reszEredmeny;
+                    //az index mindig a sorszám - elvégzett műveletek száma lesz hiszen szükségünk van a tömb előző tagjára
+                    int index = i - elvegzettMuveletek;
+                    double egyik = szamok.get(index);
+                    double masik = szamok.get(index + 1);
+                    //szorzás esetén összeszorozzuk a két számot, osztás esetén osztjuk
+                    if (jel.equals("X")) {
+                        reszEredmeny = egyik * masik;
+                    } else {
+                        reszEredmeny = egyik / masik;
+                    }
+                    //eltávolítjuk a számokból azt, amelyikkel a műveletet végeztük
+                    szamok.remove(index + 1);
+                    //a kapott eredményt pedig elmentjük
+                    szamok.set(index, reszEredmeny);
+
+                    elvegzettMuveletek += 1;
+                }
+            }
+            //eltávolítjuk az összes * és / jelet
+            muveletiJelek.removeAll(Arrays.asList("X"));
+            muveletiJelek.removeAll(Arrays.asList("/"));
+
+            //ekkor már csak összeadás és kivonás műveletek vannak hátra
             System.out.println("számok: " + szamok);
             System.out.println("műveleti jelek: " + muveletiJelek);
+
+            //előkészítjük az összeg változót, az első számot betöltjük az előzőbe és töröljük a tömbből
+            double osszeg = 0;
+            double elozoSzam = szamok.get(0);
+            szamok.remove(0);
+
+            //ha csak egy műveletet végeztünk akkor az első szám lesz az eredményünk
+            if (szamok.isEmpty()) {
+                osszeg = elozoSzam;
+            }
+
+            //addig hajtunk végre műveleteket, ameddig van további műveleti jelünk
+            while (!muveletiJelek.isEmpty()) {
+                //összeadunk és kivonunk
+                if (muveletiJelek.get(0).equals("+")) {
+                    osszeg = elozoSzam + szamok.get(0);
+                } else {
+                    osszeg = elozoSzam - szamok.get(0);
+                }
+
+                //eltávolítjuk a műveleti jelet és a számot
+                elvegzettMuveletek += 1;
+                muveletiJelek.remove(0);
+                szamok.remove(0);
+                elozoSzam = osszeg;
+            }
+
+            //elfogytak a számok és a műveletek, végzünk egy ellenőrzést
+            System.out.println("\nszámok: " + szamok);
+            System.out.println("műveleti jelek: " + muveletiJelek);
+            System.out.println("elvégzett műveletek: " + elvegzettMuveletek);
+            System.out.println("\nösszeg: " + osszeg);
+
+            //csinosítjuk az eredményt, ha .0-ra végződik akkor azt levágjuk egyébként két tizedesjegyre kerekítünk
+            String osszegString = String.valueOf(osszeg);
+            if (osszegString.endsWith(".0")) {
+                osszegString = osszegString.substring(0, osszegString.length() - 2);
+            } else {
+                osszegString = String.format("%.2f", osszeg);
+            }
+
+            //kitöröljük a bekért függvényt és átrakjuk fentre
+            eredmeny.setText("");
+            korabbiMuvelet.setText(korabbiMuvelet.getText() + osszegString);
         }
     }//GEN-LAST:event_egyenloActionPerformed
 
@@ -431,7 +505,7 @@ public class Szamologep extends javax.swing.JFrame {
         switch (String.valueOf(c)) {
             case "+":
             case "-":
-            case "*":
+            case "X":
             case "/":
                 return true;
             default:
@@ -446,7 +520,7 @@ public class Szamologep extends javax.swing.JFrame {
             switch (utolsoKarakter) {
                 case "+":
                 case "-":
-                case "*":
+                case "X":
                 case "/":
                     return true;
                 default:
