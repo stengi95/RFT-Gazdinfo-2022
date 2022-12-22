@@ -73,3 +73,12 @@ _________________________________
 		
 		Továbbá, a fentemlített projekt dokumentumok minden érintettje számára elérhető, és jól követhető felületen történő tárolása.(github)		
 
+	Ütemterv:
+		Funkció / Story	    Feladat / Task		Prioritás	Becslés		Aktuális becslés	Eltelt idő	Hátralévő idő	
+		Követelmény 
+        	specifikáció:	                    		2		    8		    8			     7		    2	
+		Funkcionális 
+        	specifikáció:	                    		2		    8		    8			     7		    2	
+		Rendszerterv:					2		    8		    8			     7		    2	
+		Adattárolás:		trello/github		1		    2		    2			     7		    2	
+			
