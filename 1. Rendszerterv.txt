@@ -76,10 +76,11 @@ _________________________________
 	Ütemterv:
 		Feladat / Task			Prioritás	Becslés		Aktuális becslés	Eltelt idő	Hátralévő idő
 		0. Adattárolás trello & github:	1		    2		    2			     7		    2	
-		1. Rendszerterv:		2		    8		    8			     7		    2		
-		2. Követelmény specifikáció:	2		    8		    8			     7		    2	
-		3. Funkcionális specifikáció:	2		    8		    8			     7		    2
-			
+		1. Rendszerterv:		3		    8		    8			     7		    2		
+		2. Követelmény specifikáció:	3		    8		    8			     7		    2	
+		3. Funkcionális specifikáció:	3		    8		    8			     7		    2
+		4. Forráskód (fejlesztés):	2		    8		    8			     7		    2
+		5. Teszt jegyzőkönyv:					
 		
 
 	Mérföldkövek: 
