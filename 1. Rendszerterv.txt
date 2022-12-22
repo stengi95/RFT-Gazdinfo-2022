@@ -54,7 +54,7 @@ _________________________________
 
 	Projekt szereokörök, felelősségek:
 		Scrum/Kanban master: Stenger Márton (trello)
-		Product owner: Rft Kft.
+		Product owner: Rft Korlátolt felelőségű társaság
 	
 	Projektmunkások és felelőségek:
 		Dokumentációs munkálatok:
