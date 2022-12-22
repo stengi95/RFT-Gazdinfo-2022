@@ -80,7 +80,7 @@ _________________________________
 		2. Követelmény specifikáció:	3		    8		    8			     7		    2	
 		3. Funkcionális specifikáció:	3		    8		    8			     7		    2
 		4. Forráskód (fejlesztés):	2		    8		    8			     7		    2
-		5. Teszt jegyzőkönyv:					
+		5. Teszt jegyzőkönyv:		4		    1		    1			     0		    2			
 		
 
 	Mérföldkövek: 
