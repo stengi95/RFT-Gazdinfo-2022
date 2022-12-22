@@ -97,4 +97,6 @@ _________________________________
 	felölelő adatok törlésére.
 	
 4. Funkcionális terv:
-	A program lehetőséget nyújt minden szereplő számára, hogy az alkalmazás minden egyes funkcióját megszorítások nélkül használhassa. 
+	A program lehetőséget nyújt minden szereplő számára, hogy az alkalmazás minden egyes funkcióját megszorítások nélkül használhassa. Ezek a következők: a számokra 
+	a valós számok halmazán értelmezett négy alapművelet(összeadás, kivonás, szorzás, osztás). Ezeken felül a program használatakor lehetőség van a százalékszámítás
+	kalkulálására is.
