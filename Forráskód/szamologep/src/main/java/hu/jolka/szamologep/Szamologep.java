@@ -34,7 +34,7 @@ public class Szamologep extends javax.swing.JFrame {
         hat = new javax.swing.JButton();
         kilenc = new javax.swing.JButton();
         egyenlo = new javax.swing.JButton();
-        vesszo = new javax.swing.JButton();
+        vakGomb = new javax.swing.JButton();
         hozzaadas = new javax.swing.JButton();
         kivonas = new javax.swing.JButton();
         osztas = new javax.swing.JButton();
@@ -42,6 +42,7 @@ public class Szamologep extends javax.swing.JFrame {
         nulla = new javax.swing.JButton();
         teljesTorles = new javax.swing.JButton();
         eredmeny = new javax.swing.JTextField();
+        korabbiMuvelet = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Számológép");
@@ -124,13 +125,6 @@ public class Szamologep extends javax.swing.JFrame {
             }
         });
 
-        vesszo.setText(",");
-        vesszo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                vesszoActionPerformed(evt);
-            }
-        });
-
         hozzaadas.setText("+");
         hozzaadas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,6 +169,8 @@ public class Szamologep extends javax.swing.JFrame {
 
         eredmeny.setEditable(false);
 
+        korabbiMuvelet.setEditable(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -196,7 +192,7 @@ public class Szamologep extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(egy, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(vesszo, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(vakGomb, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -225,14 +221,17 @@ public class Szamologep extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(hozzaadas, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(torles, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(korabbiMuvelet))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(eredmeny, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(korabbiMuvelet, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(eredmeny, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(torles, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -258,7 +257,7 @@ public class Szamologep extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(egyenlo, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(vesszo, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(vakGomb, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(osztas, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nulla, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
@@ -318,12 +317,6 @@ public class Szamologep extends javax.swing.JFrame {
     private void teljesTorlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teljesTorlesActionPerformed
         eredmeny.setText("");
     }//GEN-LAST:event_teljesTorlesActionPerformed
-
-    private void vesszoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vesszoActionPerformed
-        if (!isUtolsoKarakterOperator() && isUtolsoKarakterSzam()) {
-            hozzaIr(",");
-        }
-    }//GEN-LAST:event_vesszoActionPerformed
 
     private void hozzaadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hozzaadasActionPerformed
         if (!isUtolsoKarakterOperator()) {
@@ -444,6 +437,7 @@ public class Szamologep extends javax.swing.JFrame {
     private javax.swing.JButton ketto;
     private javax.swing.JButton kilenc;
     private javax.swing.JButton kivonas;
+    private javax.swing.JTextField korabbiMuvelet;
     private javax.swing.JButton negy;
     private javax.swing.JButton nulla;
     private javax.swing.JButton nyolc;
@@ -452,6 +446,6 @@ public class Szamologep extends javax.swing.JFrame {
     private javax.swing.JButton szorzas;
     private javax.swing.JButton teljesTorles;
     private javax.swing.JButton torles;
-    private javax.swing.JButton vesszo;
+    private javax.swing.JButton vakGomb;
     // End of variables declaration//GEN-END:variables
 }

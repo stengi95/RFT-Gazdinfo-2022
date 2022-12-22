@@ -25,7 +25,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="eredmeny" max="32767" attributes="0"/>
@@ -43,7 +43,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="egy" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="vesszo" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="vakGomb" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -85,6 +85,7 @@
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
+                  <Component id="korabbiMuvelet" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -93,8 +94,10 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="eredmeny" pref="49" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="korabbiMuvelet" min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="eredmeny" min="-2" pref="50" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="torles" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
@@ -124,7 +127,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="egyenlo" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                  <Component id="vesszo" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="vakGomb" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="osztas" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                   <Component id="nulla" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
               </Group>
@@ -222,13 +225,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="egyenloActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="vesszo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value=","/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vesszoActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JButton" name="vakGomb">
     </Component>
     <Component class="javax.swing.JButton" name="hozzaadas">
       <Properties>
@@ -279,6 +276,11 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="eredmeny">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="korabbiMuvelet">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
       </Properties>
