@@ -124,6 +124,7 @@ public class Szamologep extends javax.swing.JFrame {
             }
         });
 
+        egyenlo.setBackground(new java.awt.Color(0, 204, 0));
         egyenlo.setText("=");
         egyenlo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
