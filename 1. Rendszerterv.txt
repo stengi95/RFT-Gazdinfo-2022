@@ -43,9 +43,10 @@ _________________________________
 
     A rendszer fő célja, hogy a felhasználók képesek legyen az egyszerű matematikai problémák megoldására.
     A rendszer felépítése és kialakítása lehetővé teszi a rendszer egyeszerű és gyors alkalmazását. 
-    A megjelenítő panel méretével és kialakításával,
-    valamint a megjelenített betű stílusával és méretével a nehézkes leolvasást igyekszünk kiküszöbölni. 
+    A megjelenítő panel méretével és kialakításával, valamint a megjelenített betű stílusával és méretével
+    a nehézkes leolvasást igyekszünk kiküszöbölni. 
     Ezzel kedvezve az idősebb korosztálynak is. Továbbá a minimalizmus jegyében, egyszerű   gomsorokkal,
     és csupán három különböző alapszín felhasználásával (szürke, kék és piros) késztettük el a programat.
-    A sokoldalúság és a hozzáférhetőség jegyében a szoftver Androidos alkalmazásként és webes felületen is elérhető lesz.
-    Azonban, ezen projekt keretein belül nem célunk az IOS operációs rendszer kompatibilitás kiépítése.
+    A sokoldalúság és a hozzáférhetőség jegyében azonban, célunk a letöbb platformra implementálni az applikációt,
+    azonban, elsőre csak windows operációs rendszeren lesz elérhető.
+
