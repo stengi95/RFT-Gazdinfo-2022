@@ -64,7 +64,7 @@ _________________________________
 		- Szoboszlai Zsanett Ildikó 	- követelmény specifikáció
 			Feladata elkészíteni a követelelmény specifikáció dokumentációját.
 
-		- Nagy Tamás			- 
+		- Nagy Tamás			- funkcionális specifikáció
 			Feladata elkészíteni a funkcionális specifikácuó dokumentációját.
 
 		- Megyesiné Tamási Jolán Judit 	- forráskód
