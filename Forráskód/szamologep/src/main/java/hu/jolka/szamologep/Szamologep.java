@@ -87,7 +87,9 @@ public class Szamologep extends javax.swing.JFrame {
             }
         });
 
+        torles.setBackground(new java.awt.Color(255, 153, 0));
         torles.setText("Törlés");
+        torles.setOpaque(false);
         torles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 torlesActionPerformed(evt);
