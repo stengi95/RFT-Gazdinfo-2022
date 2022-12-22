@@ -93,5 +93,6 @@ _________________________________
 
 3. Követelmények:
 	A rendszernek képesnek kell lennie a felhasználó által megadott tényezők (0,1,2,3,4,5,6,7,8,9) használatával az általa választott művelet elvégzésére, legyen az
-	összeadás, kivonás, szorzás, osztás.
+	összeadás, kivonás, szorzás, osztás. Ezen felül képesnek kell lennie százalékszámításra, valamint hibás adatbevitel esetében karakterenkénti, valamint az egész textboxot
+	felölelő adatok törlésére.
 			
