@@ -265,6 +265,7 @@ public class Szamologep extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void egyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyActionPerformed
@@ -319,23 +320,33 @@ public class Szamologep extends javax.swing.JFrame {
     }//GEN-LAST:event_teljesTorlesActionPerformed
 
     private void vesszoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vesszoActionPerformed
-        hozzaIr(",");
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr(",");
+        }
     }//GEN-LAST:event_vesszoActionPerformed
 
     private void hozzaadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hozzaadasActionPerformed
-        hozzaIr("+");
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("+");
+        }
     }//GEN-LAST:event_hozzaadasActionPerformed
 
     private void kivonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kivonasActionPerformed
-        hozzaIr("-");
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("-");
+        }
     }//GEN-LAST:event_kivonasActionPerformed
 
     private void szorzasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_szorzasActionPerformed
-        hozzaIr("*");
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("*");
+        }
     }//GEN-LAST:event_szorzasActionPerformed
 
     private void osztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_osztasActionPerformed
-        hozzaIr("/");
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("/");
+        }
     }//GEN-LAST:event_osztasActionPerformed
 
     private void egyenloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyenloActionPerformed
@@ -382,6 +393,23 @@ public class Szamologep extends javax.swing.JFrame {
         eredmeny.setText(eredmeny.getText() + s);
     }
 
+    private boolean isUtolsoKarakterOperator() {
+        if (!eredmeny.getText().trim().isEmpty()) {
+            int hossz = eredmeny.getText().length();
+            String utolsoKarakter = eredmeny.getText().substring(hossz - 1, hossz);
+            switch (utolsoKarakter) {
+                case "+":
+                case "-":
+                case "*":
+                case "/":
+                case ",":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+        return false;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton egy;
     private javax.swing.JButton egyenlo;
