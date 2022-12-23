@@ -59,5 +59,8 @@ Weboldal létrehozása, hogy le lehessen tölteni a programot diákoknak ingyen,
 
 8. Követelménylista 
 
-
- 
+Alap művelet 1: összeadás
+Alap művelet 2: kivonás
+Alap művelet 3: szorzás
+Alap művelet 4: osztás
+Alap művelet 5: eredmény
