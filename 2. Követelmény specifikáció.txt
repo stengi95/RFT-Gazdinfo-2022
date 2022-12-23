@@ -66,3 +66,6 @@ Alap művelet 4: osztás
 Alap művelet 5: eredmény
 
 9. Riportok
+
+Hogyan kellene működnie az új rendszernek?
+Az új redszernek a számológép elvének megfelelően kellene működnie, kizárólag alapműveletek terén, később mint egy professzionális számológép.
