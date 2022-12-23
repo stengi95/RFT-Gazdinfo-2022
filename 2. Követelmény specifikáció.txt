@@ -52,3 +52,5 @@ A rendszert licenszelni szeretnénk, így az arra vonatkozó szabályok a mérva
 
 A nagyvállalatok a legtöbb hasznos és könnyen használható program licensét megveszi, így az elsődleges célunk, hogy a nagyvállalatok megvegyék a számológépünk licensét.
 Ammenyiben egy cég megszeretné venni a program forráskódját, úgy nem zárkózunk el a vállalkozás eladástól sem.
+
+7. Igényelt üzleti folyamatok
