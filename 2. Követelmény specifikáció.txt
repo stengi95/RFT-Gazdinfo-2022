@@ -1,0 +1,3 @@
+A szoftver célja egy egyszerű számológép biztosítása a mindennapi matematikai problémák megoldására. Mint például a havi bevételeink összegzése és a kiadások levonása.
+Egy kisboltban vásárolt termékek végösszegének meghatározása, az esetleges százalékos kedvezmények levonásával. Az alkalmazás egyértelmű, jól látható és könnyen leolvasható
+felirattal ellátott gombokkal rendelkezik. A négy alapműveletet (összeadás, szorzás, osztás, kivonás) végrehajtó gombok a számológép jobb oldalán helyezkedik el.
