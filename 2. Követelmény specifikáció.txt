@@ -54,3 +54,7 @@ A nagyvállalatok a legtöbb hasznos és könnyen használható program licensé
 Ammenyiben egy cég megszeretné venni a program forráskódját, úgy nem zárkózunk el a vállalkozás eladástól sem.
 
 7. Igényelt üzleti folyamatok
+
+Weboldal létrehozása, hogy le lehessen tölteni a programot diákoknak ingyen, valamint a cégeknek és magánszemélyeknek lincens díj (havi díj) ellenében.
+
+ 
