@@ -18,3 +18,7 @@ progrem kezelését. Későbbi verzióban megvalósításra kerülhet a színvak
 számára. A későbbi hatékonyabb használat érdekében az eredmények tárolására szolgáló funkció is megjelhet hiszen ezzel is könnyebb és használhatóbb lehet a program. Az
 eredmény tárolására szolgáló funkció igazán fontos, mivel egy hosszabb és bonyolultabb művelet elvégése után, már nem biztos, hogy a felhasználó fejben tudja tartani a 
 számításokhoz szükséges rész, illetve végeredményeket.
+
+Követelmény Specifikáció
+
+1. Áttekintés
