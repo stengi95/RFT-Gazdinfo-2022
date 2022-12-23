@@ -22,3 +22,9 @@ számításokhoz szükséges rész, illetve végeredményeket.
 Követelmény Specifikáció
 
 1. Áttekintés
+
+A program elsődleges célja, hogy amennyiben a windows operációs rendszeren nem lenne, vagy nem működne a beépített számológép, úgy azt ki lehessen váltani. Továbbá egy gyorsabb
+jobb és a frissítések során jobban használható számológépet létrehozni. A számológép az alapvető 4 műveletett ismeri, ami nem más mint az összeadás, a kivonás, a szorzás és az 
+osztás. A későbbeikben ezeket a műveleteket bővítenénk. A szoftver ezen felül, megkönyítheti az egyetemisták életét, hiszen egy jó számológép nélkül nem lehet diplomát szerezni.
+
+ 
