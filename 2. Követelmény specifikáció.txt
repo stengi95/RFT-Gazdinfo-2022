@@ -45,3 +45,5 @@ A program előnye, csak egy windows operációs rendszer futtató számítógép
 akkor a legközelebbi könyvtársban, vagy iskolában lehetőség van a használatára.
 
 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+
+A rendszert licenszelni szeretnénk, így az arra vonatkozó szabályok a mérvadók.
