@@ -69,3 +69,5 @@ Alap művelet 5: eredmény
 
 Hogyan kellene működnie az új rendszernek?
 Az új redszernek a számológép elvének megfelelően kellene működnie, kizárólag alapműveletek terén, később mint egy professzionális számológép.
+
+10. Fogalomtár
