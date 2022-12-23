@@ -11,4 +11,8 @@ ________________________________________________________________________________
 
 A projekt célja egy olyan alkamazás megalkotása, amely lehetőséget nyújt a felhasználók számára, hogy egyszerűen és gyorsan végezzhessnek el akár bonyolultabb matematikai
 műveleteket is, mint például százalék számítás, esetleges kedvezmények kalkulálása. A rendszer jelenleg windows operációs rendszeren válik elérhetővel, azonban amennyiben
-a projekt sikeres későbbiekben megjelenhet más platformokon is, hiszen a java egy multiplatform programozási nyelv.
+a projekt sikeres későbbiekben megjelenhet más platformokon is, hiszen a java egy multiplatform programozási nyelv. A program könnyen kezelhető, letisztult és nem tartalmaz
+felesleges dizájnelemeket, ez által is megkönnyítve a program használatát akár a későbbiekben az idősebb generció számára is. A gombok alapértelmezetten a szükre árnyalatait
+veszik fel, de későbbiekben ammenyiben a projekct sikeres, felmerülhet a lehetőség ezen szín személyreszabására is. Ezeknek köszönhetően bárki könnyedén elsajátathatja a
+progrem kezelését. Későbbi verzióban megvalósításra kerülhet a színvak mód is ammennyiben igény van rá, amellyel további segítséget szeretnénk nyújtani leednő fehasználóink
+számára.
