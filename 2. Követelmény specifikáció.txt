@@ -47,3 +47,5 @@ akkor a legközelebbi könyvtársban, vagy iskolában lehetőség van a használ
 5. Rendszerre vonatkozó törvények, szabványok, ajánlások
 
 A rendszert licenszelni szeretnénk, így az arra vonatkozó szabályok a mérvadók.
+
+6. Jelenlegi üzleti folyamatok modellje
