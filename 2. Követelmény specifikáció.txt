@@ -5,4 +5,10 @@ A számológép felső részén a bevitt értékek és a végeredmény látható
 Továbbá, kétféle törlési funkcióval rendelkezik. Lehetőség van arra, hogy a karaktereket egyenként töröljük, valamint a mező egy gombbal történő megtisztítására is.
 Az imént említett (karakterenként törlés, teljes törlés) gombok a számológép jobb felső sarkában helyezkednek el, egymás mellett, a lehetséges első két pozíción.
 
-!Pontosításhoz megbeszélés szükséges! 
+!A pontos követelmény leíráshoz megbeszélés szükséges!
+
+_________________________________________________________________________________________
+
+A projekt célja egy olyan alkamazás megalkotása, amely lehetőséget nyújt a felhasználók számára, hogy egyszerűen és gyorsan végezzhessnek el akár bonyolultabb matematikai
+műveleteket is, mint például százalék számítás, esetleges kedvezmények kalkulálása. A rendszer jelenleg windows operációs rendszeren válik elérhetővel, azonban amennyiben
+a projekt sikeres későbbiekben megjelenhet más platformokon is, hiszen a java egy multiplatform programozási nyelv.
