@@ -1,3 +1,6 @@
 A szoftver célja egy egyszerű számológép biztosítása a mindennapi matematikai problémák megoldására. Mint például a havi bevételeink összegzése és a kiadások levonása.
 Egy kisboltban vásárolt termékek végösszegének meghatározása, az esetleges százalékos kedvezmények levonásával. Az alkalmazás egyértelmű, jól látható és könnyen leolvasható
 felirattal ellátott gombokkal rendelkezik. A négy alapműveletet (összeadás, szorzás, osztás, kivonás) végrehajtó gombok a számológép jobb oldalán helyezkedik el.
+A számológép felső részén a bevitt értékek és a végeredmény látható, a felület és a számok mérete lehetővé teszi a könnyű leolvasást és a bevitt értékek nyomon követését.
+Továbbá, kétféle törlési funkcióval rendelkezik. Lehetőség van arra, hogy a karaktereket egyenként töröljük, valamint a mező egy gombbal történő megtisztítására is.
+Az imént említett (karakterenként törlés, teljes törlés) gombok a számológép jobb felső sarkában helyezkednek el, egymás mellett, a lehetséges első két pozíción.
