@@ -64,3 +64,5 @@ Alap művelet 2: kivonás
 Alap művelet 3: szorzás
 Alap művelet 4: osztás
 Alap művelet 5: eredmény
+
+9. Riportok
