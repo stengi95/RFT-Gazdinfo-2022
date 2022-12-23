@@ -35,4 +35,6 @@ mindenkinek szüksége van, hiszen a matematika a mindennapjaink része.
 
 3. Vágyálom rendszer
 
-A szoftver célja egy olyan rendszer, ami jól használható az élet minden területén és mindenki számára elérhető.
+A szoftver célja egy olyan rendszer, ami jól használható az élet minden területén és mindenki számára elérhető. A tervek szerint a számológép elérhető lesz több platformon is. 
+Egyszerű, letisztúlt felülettel rendelkezik a program, hogy ne zavarja a látványos világgal a felhasználók figyelmét. A későbbiekben szeretnénk adat tárolást létrehozni, azaz
+a beírt műveleteket vissza lehessen keresni, a részeredményeket le lehessen ellenőrizni.
