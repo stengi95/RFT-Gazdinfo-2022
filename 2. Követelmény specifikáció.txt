@@ -32,3 +32,7 @@ osztás. A későbbeikben ezeket a műveleteket bővítenénk. A szoftver ezen f
 Az alkalmazásunkra azért van szükség, mert manapság teret nyert a technológiai fejlődés. Ez nincs másképp a mindennapokban sem. Hiszen pár száz éve abakuszt használtak számolásra.
 Jelenleg különálló számológépet használunk, azonban a jövő az hogy, mindenki számítógépen vagy okostelefon számoljon. Az alapvető matematikai műveletek ismeretére és használatára
 mindenkinek szüksége van, hiszen a matematika a mindennapjaink része.
+
+3. Vágyálom rendszer
+
+A szoftver célja egy olyan rendszer, ami jól használható az élet minden területén és mindenki számára elérhető.
