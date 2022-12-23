@@ -71,3 +71,10 @@ Hogyan kellene működnie az új rendszernek?
 Az új redszernek a számológép elvének megfelelően kellene működnie, kizárólag alapműveletek terén, később mint egy professzionális számológép.
 
 10. Fogalomtár
+
+Műveletek:
+- Összeadás:	két szám összeadása egymással
+- Kivonás:		két szám kivonása egymásból
+- Szorzás:		két szám szorzása egymással
+- Osztás:		Két szám osztása egymással
+- Eredmény:		a fenti műveletek végeredményének kiírása
