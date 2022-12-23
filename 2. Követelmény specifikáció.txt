@@ -41,4 +41,5 @@ a beírt műveleteket vissza lehessen keresni, a részeredményeket le lehessen 
 
 4. Funkcionális követelmények
 
-
+A program előnye, csak egy windows operációs rendszer futtató számítógépre van szükség, ami a mai világban egy alapvető eszköz, hisze szinte minden családban van, vagy ha nincs,
+akkor a legközelebbi könyvtársban, vagy iskolában lehetőség van a használatára.
