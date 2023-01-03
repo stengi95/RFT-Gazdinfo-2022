@@ -51,7 +51,7 @@
 		Megjegyzés
 		-
 
-	3.3 szorzás					//...TOMI...OK.. tesztelje (8 lépés)
+	3.3 szorzás					//........ tesztelje (8 lépés)
 		Teszt: 
 			1 * 1 =
 			1 * 2 =
@@ -64,7 +64,7 @@
 		Megjegyzés
 		-
 
-	3.4 osztás					//...TOMI....OK.. tesztelje (8 lépés)
+	3.4 osztás					//......... tesztelje (8 lépés)
 		Teszt: 
 			1 / 1 =
 			2 / 1 =
