@@ -7,9 +7,17 @@
 		-
 		-
 
-2. Törlés						//Mindenki tesztelje (1 lépés)
-	2.1 Karakterek törlése
-		Teszt: Törlés gomb használata
+2. Törlés						
+	2.1  Egy karakterek törlése			//Mindenki tesztelje (1 lépés)
+		Teszt: Egy karakter törlése gomb használata
+		Teszelte - Megjegyzés
+		-
+		-
+		-
+		-
+
+	2.2 Összes karakterek törlése			//Mindenki tesztelje (1 lépés)
+		Teszt: Minden karakter törlése gomb használata
 		Teszelte - Megjegyzés
 		-
 		-
@@ -79,10 +87,10 @@
 		-
 
 Teszt szereplői:		Lépésszám:
-Stenger Márton			20	
-Szoboszlai Zsanett Ildikó	20
-Nagy Tamás			20
-Megyesiné Tamási Jolán Judit	20
+Stenger Márton			21	
+Szoboszlai Zsanett Ildikó	21
+Nagy Tamás			21
+Megyesiné Tamási Jolán Judit	21
 
 
 
