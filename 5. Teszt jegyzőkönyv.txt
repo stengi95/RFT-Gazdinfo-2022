@@ -82,7 +82,7 @@
 		Teszt: Eredmény gomb használata
 		Teszelte - Megjegyzés
 		- Marci - OK
-		-
+		- Zsani - OK
 		-
 		-
 
