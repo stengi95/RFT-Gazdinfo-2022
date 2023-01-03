@@ -1,14 +1,16 @@
 package hu.jolka.szamologep;
 
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import javax.swing.JFrame;
 
 /**
  *
  * @author jolka
  */
-public class Szamologep extends javax.swing.JFrame {
+public class Szamologep extends JFrame {
 
     /**
      * Creates new form Szamologep
@@ -89,7 +91,6 @@ public class Szamologep extends javax.swing.JFrame {
 
         torles.setBackground(new java.awt.Color(255, 153, 0));
         torles.setText("Törlés");
-        torles.setOpaque(false);
         torles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 torlesActionPerformed(evt);
@@ -129,6 +130,12 @@ public class Szamologep extends javax.swing.JFrame {
         egyenlo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 egyenloActionPerformed(evt);
+            }
+        });
+
+        vakGomb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vakGombActionPerformed(evt);
             }
         });
 
@@ -177,8 +184,18 @@ public class Szamologep extends javax.swing.JFrame {
         });
 
         eredmeny.setEditable(false);
+        eredmeny.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                eredmenyKeyPressed(evt);
+            }
+        });
 
         korabbiMuvelet.setEditable(false);
+        korabbiMuvelet.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                korabbiMuveletKeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -277,43 +294,43 @@ public class Szamologep extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void egyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyActionPerformed
-        hozzaIr("1");
+        egy();
     }//GEN-LAST:event_egyActionPerformed
 
     private void kettoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kettoActionPerformed
-        hozzaIr("2");
+        ketto();
     }//GEN-LAST:event_kettoActionPerformed
 
     private void haromActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_haromActionPerformed
-        hozzaIr("3");
+        harom();
     }//GEN-LAST:event_haromActionPerformed
 
     private void nullaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nullaActionPerformed
-        hozzaIr("0");
+        nulla();
     }//GEN-LAST:event_nullaActionPerformed
 
     private void negyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_negyActionPerformed
-        hozzaIr("4");
+        negy();
     }//GEN-LAST:event_negyActionPerformed
 
     private void otActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_otActionPerformed
-        hozzaIr("5");
+        ot();
     }//GEN-LAST:event_otActionPerformed
 
     private void hatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hatActionPerformed
-        hozzaIr("6");
+        hat();
     }//GEN-LAST:event_hatActionPerformed
 
     private void hetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hetActionPerformed
-        hozzaIr("7");
+        het();
     }//GEN-LAST:event_hetActionPerformed
 
     private void nyolcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nyolcActionPerformed
-        hozzaIr("8");
+        nyolc();
     }//GEN-LAST:event_nyolcActionPerformed
 
     private void kilencActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kilencActionPerformed
-        hozzaIr("9");
+        kilenc();
     }//GEN-LAST:event_kilencActionPerformed
 
     private void torlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_torlesActionPerformed
@@ -473,6 +490,18 @@ public class Szamologep extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_egyenloActionPerformed
 
+    private void korabbiMuveletKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_korabbiMuveletKeyPressed
+        gombNyomasKezeles(evt);
+    }//GEN-LAST:event_korabbiMuveletKeyPressed
+
+    private void eredmenyKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_eredmenyKeyPressed
+        gombNyomasKezeles(evt);
+    }//GEN-LAST:event_eredmenyKeyPressed
+
+    private void vakGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vakGombActionPerformed
+        eredmeny.requestFocus();
+    }//GEN-LAST:event_vakGombActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -563,6 +592,106 @@ public class Szamologep extends javax.swing.JFrame {
         }
         return false;
     }
+
+    private void nulla() {
+        hozzaIr("0");
+        eredmeny.requestFocus();
+    }
+
+    private void egy() {
+        hozzaIr("1");
+        eredmeny.requestFocus();
+    }
+
+    private void ketto() {
+        hozzaIr("2");
+        eredmeny.requestFocus();
+    }
+
+    private void harom() {
+        hozzaIr("3");
+        eredmeny.requestFocus();
+    }
+
+    private void negy() {
+        hozzaIr("4");
+        eredmeny.requestFocus();
+    }
+
+    private void ot() {
+        hozzaIr("5");
+        eredmeny.requestFocus();
+    }
+
+    private void hat() {
+        hozzaIr("6");
+        eredmeny.requestFocus();
+    }
+
+    private void het() {
+        hozzaIr("7");
+        eredmeny.requestFocus();
+    }
+
+    private void nyolc() {
+        hozzaIr("8");
+        eredmeny.requestFocus();
+    }
+
+    private void kilenc() {
+        hozzaIr("9");
+        eredmeny.requestFocus();
+    }
+
+    private void gombNyomasKezeles(KeyEvent evt) {
+        System.out.println("gombNyomasKezeles, karakter: " + evt.getKeyChar() + " kód: " + evt.getExtendedKeyCode());
+
+        switch (evt.getExtendedKeyCode()) {
+            case 48:
+            case 96:
+                nulla();
+                break;
+            case 49:
+            case 97:
+                egy();
+                break;
+            case 50:
+            case 98:
+                ketto();
+                break;
+            case 51:
+            case 99:
+                harom();
+                break;
+            case 52:
+            case 100:
+                negy();
+                break;
+            case 53:
+            case 101:
+                ot();
+                break;
+            case 54:
+            case 102:
+                hat();
+                break;
+            case 55:
+            case 103:
+                het();
+                break;
+            case 56:
+            case 104:
+                nyolc();
+                break;
+            case 57:
+            case 105:
+                kilenc();
+                break;
+            default:
+                break;
+        }
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton egy;
     private javax.swing.JButton egyenlo;
@@ -585,4 +714,5 @@ public class Szamologep extends javax.swing.JFrame {
     private javax.swing.JButton torles;
     private javax.swing.JButton vakGomb;
     // End of variables declaration//GEN-END:variables
+
 }
