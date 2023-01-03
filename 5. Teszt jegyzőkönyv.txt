@@ -4,7 +4,7 @@
 		Teszelte - Megjegyzés
 		- Marci - OK még Numpaddal is.
 		- Zsani - OK
-		-
+		- Jolka - ok
 		-
 
 2. Törlés						
@@ -13,7 +13,7 @@
 		Teszelte - Megjegyzés
 		- Marci - OK
 		- Zsani - OK
-		-
+		- Jolka - ok
 		-
 
 	2.2 Összes karakterek törlése			//Mindenki tesztelje (1 lépés)
