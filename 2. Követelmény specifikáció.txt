@@ -4,7 +4,9 @@ felirattal ellátott gombokkal rendelkezik. A négy alapműveletet (összeadás,
 A számológép felső részén a bevitt értékek és a végeredmény látható, a felület és a számok mérete lehetővé teszi a könnyű leolvasást és a bevitt értékek nyomon követését.
 Továbbá, kétféle törlési funkcióval rendelkezik. Lehetőség van arra, hogy a karaktereket egyenként töröljük, valamint a mező egy gombbal történő megtisztítására is.
 Az imént említett (karakterenként törlés, teljes törlés) gombok a számológép jobb felső sarkában helyezkednek el, egymás mellett, a lehetséges első két pozíción.
-A karakterenkénti törlés narancssárga színű, közvetlenül mellette a teljes törlés pedig piros színű.
+A karakterenkénti törlés narancssárga színű, közvetlenül mellette a teljes törlés pedig piros színű, ezek a gombok a beírt számok alatt helyezkednek el. A két törlés
+gomb alatt találhatóak a számok (0,1,2,3,4,5,6,7,8,9), az eredmény gomb azaz a '=' zöld színnel, továbbá jobb oldalt ezen gombok mellett jobbra a műveletei jelek:
+összeadás '+', kivonás '-', szorzás 'X' és az osztás '/'. Minden gomb lekerkítve.
 
 _________________________________________________________________________________________
 
