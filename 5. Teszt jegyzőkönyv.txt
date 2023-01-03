@@ -81,7 +81,7 @@
 	4.1 eredménylekérdezés				//Mindenki tesztelje (1 lépés)
 		Teszt: Eredmény gomb használata
 		Teszelte - Megjegyzés
-		-
+		- Marci - OK
 		-
 		-
 		-
