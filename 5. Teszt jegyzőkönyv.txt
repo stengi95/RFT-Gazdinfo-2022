@@ -83,7 +83,7 @@
 		Teszelte - Megjegyzés
 		- Marci - OK
 		- Zsani - OK
-		-
+		- Jolka - ok Színezés is ok
 		-
 
 Teszt szereplői:		Lépésszám:
