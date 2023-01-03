@@ -1,0 +1,88 @@
+1. Alapvető gombok működése 				//Mindenki tesztelje (10 lépes)
+	1.1 Számológépen használható számok kipróbálása
+		Teszt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+		Teszelte - Megjegyzés
+		-
+		-
+		-
+		-
+
+2. Törlés						//Mindenki tesztelje (1 lépés)
+	2.1 Karakterek törlése
+		Teszt: Törlés gomb használata
+		Teszelte - Megjegyzés
+		-
+		-
+		-
+		-
+
+3. Műveletek (egyjegyű, kétjegyű,... hétjegyűvel)	
+	3.1 összeadás					//....... tesztelje (8 lépés)
+		Teszt:
+ 			1 + 1 =
+			1 + 2 =
+			12 + 12 = 
+			112 + 112 = 
+			1 112 + 1 112 =
+			11 112 + 11 112 =
+			111 1112 + 111 112 =
+			1 111 112 + 1 111 112 =
+		Teszelte - Megjegyzés
+		-
+
+	3.2 kivonás					//........ tesztelje (8 lépés)
+		Teszt: 
+			1 - 1 =
+			2 - 1 =
+			12 - 12 = 
+			212 - 112 = 
+			1 212 - 1 112 =
+			11 112 - 11 110 =
+			121 1112 - 111 112 =
+			1 211 112 - 1 111 112 =
+		Teszelte - Megjegyzés
+		-
+
+	3.3 szorzás					//........ tesztelje (8 lépés)
+		Teszt: 
+			1 * 1 =
+			1 * 2 =
+			12 * 12 = 
+			112 * 112 = 
+			1 112 * 1 112 =
+			11 112 * 11 112 =
+			111 1112 * 111 112 =
+			1 111 112 * 1 111 112 =
+		Teszelte - Megjegyzés
+		-
+
+	3.4 osztás					//......... tesztelje (8 lépés)
+		Teszt: 
+			1 / 1 =
+			2 / 1 =
+			12 / 11 = 
+			222 / 111 = 
+			1 112 / 1 112 =
+			11 212 / 11 112 =
+			111 1112 / 111 112 =
+			1 211 112 / 1 111 112 =
+		Teszelte - Megjegyzés
+		-
+
+4. Eredmény
+	4.1 eredménylekérdezés				//Mindenki tesztelje (1 lépés)
+		Teszt: Eredmény gomb használata
+		Teszelte - Megjegyzés
+		-
+		-
+		-
+		-
+
+Teszt szereplői:		Lépésszám:
+Stenger Márton			20	
+Szoboszlai Zsanett Ildikó	20
+Nagy Tamás			20
+Megyesiné Tamási Jolán Judit	20
+
+
+
