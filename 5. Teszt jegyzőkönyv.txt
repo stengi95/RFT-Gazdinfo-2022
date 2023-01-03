@@ -19,7 +19,7 @@
 	2.2 Összes karakterek törlése			//Mindenki tesztelje (1 lépés)
 		Teszt: Minden karakter törlése gomb használata
 		Teszelte - Megjegyzés
-		-
+		- Marci - OK
 		-
 		-
 		-
