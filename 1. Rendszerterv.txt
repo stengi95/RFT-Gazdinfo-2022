@@ -75,12 +75,12 @@ _________________________________
 
 	Ütemterv:
 		Feladat / Task			Prioritás	Becslés		Aktuális becslés	Eltelt idő	Hátralévő idő
-		0. Adattárolás trello & github:	1		    2		    2			     7		    2	
-		1. Rendszerterv:		3		    8		    8			     7		    2		
-		2. Követelmény specifikáció:	3		    8		    8			     7		    2	
-		3. Funkcionális specifikáció:	3		    8		    8			     7		    2
-		4. Forráskód (fejlesztés):	2		    8		    8			     7		    2
-		5. Teszt jegyzőkönyv:		4		    1		    1			     0		    2			
+		0. Adattárolás trello & github:	1		    2		    2			     9		    0	
+		1. Rendszerterv:		3		    8		    8			     9		    0		
+		2. Követelmény specifikáció:	3		    8		    8			     9		    0	
+		3. Funkcionális specifikáció:	3		    8		    8			     9		    0
+		4. Forráskód (fejlesztés):	2		    8		    8			     9		    0
+		5. Teszt jegyzőkönyv:		4		    1		    1			     1		    0			
 		
 
 	Mérföldkövek: 
@@ -98,5 +98,4 @@ _________________________________
 	
 4. Funkcionális terv:
 	A program lehetőséget nyújt minden szereplő számára, hogy az alkalmazás minden egyes funkcióját megszorítások nélkül használhassa. Ezek a következők: a számokra 
-	a valós számok halmazán értelmezett négy alapművelet(összeadás, kivonás, szorzás, osztás). Ezeken felül a program használatakor lehetőség van a százalékszámítás
-	kalkulálására is.
+	a valós számok halmazán értelmezett négy alapművelet(összeadás, kivonás, szorzás, osztás).
