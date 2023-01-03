@@ -334,38 +334,27 @@ public class Szamologep extends JFrame {
     }//GEN-LAST:event_kilencActionPerformed
 
     private void torlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_torlesActionPerformed
-        if (!eredmeny.getText().trim().isEmpty()) {
-            String er = eredmeny.getText();
-            eredmeny.setText(er.substring(0, er.length() - 1));
-        }
+        torles();
     }//GEN-LAST:event_torlesActionPerformed
 
     private void teljesTorlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teljesTorlesActionPerformed
-        eredmeny.setText("");
+        teljesTorles();
     }//GEN-LAST:event_teljesTorlesActionPerformed
 
     private void hozzaadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hozzaadasActionPerformed
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("+");
-        }
+        plusz();
     }//GEN-LAST:event_hozzaadasActionPerformed
 
     private void kivonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kivonasActionPerformed
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("-");
-        }
+        minusz();
     }//GEN-LAST:event_kivonasActionPerformed
 
     private void szorzasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_szorzasActionPerformed
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("X");
-        }
+        szorzas();
     }//GEN-LAST:event_szorzasActionPerformed
 
     private void osztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_osztasActionPerformed
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("/");
-        }
+        osztas();
     }//GEN-LAST:event_osztasActionPerformed
 
     private void egyenloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyenloActionPerformed
@@ -643,6 +632,47 @@ public class Szamologep extends JFrame {
         eredmeny.requestFocus();
     }
 
+    private void torles() {
+        if (!eredmeny.getText().trim().isEmpty()) {
+            String er = eredmeny.getText();
+            eredmeny.setText(er.substring(0, er.length() - 1));
+        }
+        eredmeny.requestFocus();
+    }
+
+    private void teljesTorles() {
+        eredmeny.setText("");
+        eredmeny.requestFocus();
+    }
+
+    private void plusz() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("+");
+        }
+        eredmeny.requestFocus();
+    }
+
+    private void minusz() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("-");
+        }
+        eredmeny.requestFocus();
+    }
+
+    private void szorzas() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("X");
+        }
+        eredmeny.requestFocus();
+    }
+
+    private void osztas() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("/");
+        }
+        eredmeny.requestFocus();
+    }
+
     private void gombNyomasKezeles(KeyEvent evt) {
         System.out.println("gombNyomasKezeles, karakter: " + evt.getKeyChar() + " kód: " + evt.getExtendedKeyCode());
 
@@ -686,6 +716,14 @@ public class Szamologep extends JFrame {
             case 57:
             case 105:
                 kilenc();
+                break;
+            //back space
+            case 8:
+                torles();
+                break;
+            //del
+            case 127:
+                teljesTorles();
                 break;
             default:
                 break;
