@@ -21,7 +21,7 @@
 		Teszelte - Megjegyzés
 		- Marci - OK
 		- Zsani - OK
-		-
+		- Jolka - ok00
 		-
 
 3. Műveletek (egyjegyű, kétjegyű,... hétjegyűvel)	
