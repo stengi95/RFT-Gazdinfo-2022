@@ -18,6 +18,7 @@ public class Szamologep extends JFrame {
     public Szamologep() {
         initComponents();
         eredmeny.setText("11X39X428/178X1/12+30-11");
+        eredmeny.requestFocus();
     }
 
     /**
@@ -358,16 +359,215 @@ public class Szamologep extends JFrame {
     }//GEN-LAST:event_osztasActionPerformed
 
     private void egyenloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_egyenloActionPerformed
+        egyenlo();
+    }//GEN-LAST:event_egyenloActionPerformed
+
+    private void korabbiMuveletKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_korabbiMuveletKeyPressed
+        gombNyomasKezeles(evt);
+    }//GEN-LAST:event_korabbiMuveletKeyPressed
+
+    private void eredmenyKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_eredmenyKeyPressed
+        gombNyomasKezeles(evt);
+    }//GEN-LAST:event_eredmenyKeyPressed
+
+    private void vakGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vakGombActionPerformed
+        eredmeny.requestFocus();
+    }//GEN-LAST:event_vakGombActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Szamologep().setVisible(true);
+            }
+        });
+    }
+    
+    private void hozzaIr(String s) {
+        eredmeny.setText(eredmeny.getText() + s);
+    }
+    
+    private boolean isKarakterOperator(Character c) {
+        switch (String.valueOf(c)) {
+            case "+":
+            case "-":
+            case "X":
+            case "/":
+                return true;
+            default:
+                return false;
+        }
+    }
+    
+    private boolean isUtolsoKarakterOperator() {
+        if (!eredmeny.getText().trim().isEmpty()) {
+            int hossz = eredmeny.getText().length();
+            String utolsoKarakter = eredmeny.getText().substring(hossz - 1, hossz);
+            switch (utolsoKarakter) {
+                case "+":
+                case "-":
+                case "X":
+                case "/":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+        return false;
+    }
+    
+    private boolean isUtolsoKarakterSzam() {
+        if (!eredmeny.getText().trim().isEmpty()) {
+            int hossz = eredmeny.getText().length();
+            String utolsoKarakter = eredmeny.getText().substring(hossz - 1, hossz);
+            switch (utolsoKarakter) {
+                case "0":
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                    return true;
+                default:
+                    return false;
+            }
+        }
+        return false;
+    }
+    
+    private void nulla() {
+        hozzaIr("0");
+        eredmeny.requestFocus();
+    }
+    
+    private void egy() {
+        hozzaIr("1");
+        eredmeny.requestFocus();
+    }
+    
+    private void ketto() {
+        hozzaIr("2");
+        eredmeny.requestFocus();
+    }
+    
+    private void harom() {
+        hozzaIr("3");
+        eredmeny.requestFocus();
+    }
+    
+    private void negy() {
+        hozzaIr("4");
+        eredmeny.requestFocus();
+    }
+    
+    private void ot() {
+        hozzaIr("5");
+        eredmeny.requestFocus();
+    }
+    
+    private void hat() {
+        hozzaIr("6");
+        eredmeny.requestFocus();
+    }
+    
+    private void het() {
+        hozzaIr("7");
+        eredmeny.requestFocus();
+    }
+    
+    private void nyolc() {
+        hozzaIr("8");
+        eredmeny.requestFocus();
+    }
+    
+    private void kilenc() {
+        hozzaIr("9");
+        eredmeny.requestFocus();
+    }
+    
+    private void torles() {
+        if (!eredmeny.getText().trim().isEmpty()) {
+            String er = eredmeny.getText();
+            eredmeny.setText(er.substring(0, er.length() - 1));
+        }
+        eredmeny.requestFocus();
+    }
+    
+    private void teljesTorles() {
+        eredmeny.setText("");
+        korabbiMuvelet.setText("");
+        eredmeny.requestFocus();
+    }
+    
+    private void plusz() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("+");
+        }
+        eredmeny.requestFocus();
+    }
+    
+    private void minusz() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("-");
+        }
+        eredmeny.requestFocus();
+    }
+    
+    private void szorzas() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("X");
+        }
+        eredmeny.requestFocus();
+    }
+    
+    private void osztas() {
+        if (!isUtolsoKarakterOperator()) {
+            hozzaIr("/");
+        }
+        eredmeny.requestFocus();
+    }
+    
+    private void egyenlo() {
         //Ha az eredmény nem üres
         if (!eredmeny.getText().trim().isEmpty()) {
-
+            
             String e = eredmeny.getText();
 
             //ha az előző számolás eredménye tört szám a ',' karaktert '.'-ra cseréljük
             if (e.contains(",")) {
                 e = e.replace(',', '.');
             }
-
+            
             int n = e.length();
             //Ha az utolsó karakter operátor levágjuk a végéről
             if (isUtolsoKarakterOperator()) {
@@ -375,7 +575,7 @@ public class Szamologep extends JFrame {
             }
             //műveletbe kimentjük a kifejezést
             korabbiMuvelet.setText(e + "=");
-
+            
             List<Double> szamok = new ArrayList<>();
             List<String> muveletiJelek = new ArrayList<>();
             String osszefuz = "";
@@ -399,9 +599,9 @@ public class Szamologep extends JFrame {
                 if (i + 1 == n) {
                     szamok.add(Double.valueOf(osszefuz));
                 }
-
+                
             }
-
+            
             int elvegzettMuveletek = 0;
             //végigmegyünk a műveleti jeleken
             for (int i = 0; i < muveletiJelek.size(); i++) {
@@ -422,7 +622,7 @@ public class Szamologep extends JFrame {
                     szamok.remove(index + 1);
                     //a kapott eredményt pedig elmentjük
                     szamok.set(index, reszEredmeny);
-
+                    
                     elvegzettMuveletek += 1;
                 }
             }
@@ -477,205 +677,11 @@ public class Szamologep extends JFrame {
             //az eredményt kiírjuk, hogy további számolásokat lehessen végezni
             eredmeny.setText(osszegString);
         }
-    }//GEN-LAST:event_egyenloActionPerformed
-
-    private void korabbiMuveletKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_korabbiMuveletKeyPressed
-        gombNyomasKezeles(evt);
-    }//GEN-LAST:event_korabbiMuveletKeyPressed
-
-    private void eredmenyKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_eredmenyKeyPressed
-        gombNyomasKezeles(evt);
-    }//GEN-LAST:event_eredmenyKeyPressed
-
-    private void vakGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vakGombActionPerformed
-        eredmeny.requestFocus();
-    }//GEN-LAST:event_vakGombActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Szamologep.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Szamologep().setVisible(true);
-            }
-        });
     }
-
-    private void hozzaIr(String s) {
-        eredmeny.setText(eredmeny.getText() + s);
-    }
-
-    private boolean isKarakterOperator(Character c) {
-        switch (String.valueOf(c)) {
-            case "+":
-            case "-":
-            case "X":
-            case "/":
-                return true;
-            default:
-                return false;
-        }
-    }
-
-    private boolean isUtolsoKarakterOperator() {
-        if (!eredmeny.getText().trim().isEmpty()) {
-            int hossz = eredmeny.getText().length();
-            String utolsoKarakter = eredmeny.getText().substring(hossz - 1, hossz);
-            switch (utolsoKarakter) {
-                case "+":
-                case "-":
-                case "X":
-                case "/":
-                    return true;
-                default:
-                    return false;
-            }
-        }
-        return false;
-    }
-
-    private boolean isUtolsoKarakterSzam() {
-        if (!eredmeny.getText().trim().isEmpty()) {
-            int hossz = eredmeny.getText().length();
-            String utolsoKarakter = eredmeny.getText().substring(hossz - 1, hossz);
-            switch (utolsoKarakter) {
-                case "0":
-                case "1":
-                case "2":
-                case "3":
-                case "4":
-                case "5":
-                case "6":
-                case "7":
-                case "8":
-                case "9":
-                    return true;
-                default:
-                    return false;
-            }
-        }
-        return false;
-    }
-
-    private void nulla() {
-        hozzaIr("0");
-        eredmeny.requestFocus();
-    }
-
-    private void egy() {
-        hozzaIr("1");
-        eredmeny.requestFocus();
-    }
-
-    private void ketto() {
-        hozzaIr("2");
-        eredmeny.requestFocus();
-    }
-
-    private void harom() {
-        hozzaIr("3");
-        eredmeny.requestFocus();
-    }
-
-    private void negy() {
-        hozzaIr("4");
-        eredmeny.requestFocus();
-    }
-
-    private void ot() {
-        hozzaIr("5");
-        eredmeny.requestFocus();
-    }
-
-    private void hat() {
-        hozzaIr("6");
-        eredmeny.requestFocus();
-    }
-
-    private void het() {
-        hozzaIr("7");
-        eredmeny.requestFocus();
-    }
-
-    private void nyolc() {
-        hozzaIr("8");
-        eredmeny.requestFocus();
-    }
-
-    private void kilenc() {
-        hozzaIr("9");
-        eredmeny.requestFocus();
-    }
-
-    private void torles() {
-        if (!eredmeny.getText().trim().isEmpty()) {
-            String er = eredmeny.getText();
-            eredmeny.setText(er.substring(0, er.length() - 1));
-        }
-        eredmeny.requestFocus();
-    }
-
-    private void teljesTorles() {
-        eredmeny.setText("");
-        eredmeny.requestFocus();
-    }
-
-    private void plusz() {
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("+");
-        }
-        eredmeny.requestFocus();
-    }
-
-    private void minusz() {
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("-");
-        }
-        eredmeny.requestFocus();
-    }
-
-    private void szorzas() {
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("X");
-        }
-        eredmeny.requestFocus();
-    }
-
-    private void osztas() {
-        if (!isUtolsoKarakterOperator()) {
-            hozzaIr("/");
-        }
-        eredmeny.requestFocus();
-    }
-
+    
     private void gombNyomasKezeles(KeyEvent evt) {
         System.out.println("gombNyomasKezeles, karakter: " + evt.getKeyChar() + " kód: " + evt.getExtendedKeyCode());
-
+        
         switch (evt.getExtendedKeyCode()) {
             case 48:
             case 96:
@@ -724,6 +730,22 @@ public class Szamologep extends JFrame {
             //del
             case 127:
                 teljesTorles();
+                break;
+            //enter
+            case 10:
+                egyenlo();
+                break;
+            case 106:
+                szorzas();
+                break;
+            case 111:
+                osztas();
+                break;
+            case 109:
+                minusz();
+                break;
+            case 107:
+                plusz();
                 break;
             default:
                 break;
