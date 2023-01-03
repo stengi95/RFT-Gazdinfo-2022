@@ -74,8 +74,8 @@ Az új redszernek a számológép elvének megfelelően kellene működnie, kiz�
 10. Fogalomtár
 
 Műveletek:
-- Összeadás:	két szám összeadása egymással
-- Kivonás:		két szám kivonása egymásból
-- Szorzás:		két szám szorzása egymással
-- Osztás:		Két szám osztása egymással
-- Eredmény:		a fenti műveletek végeredményének kiírása
+- '+' Összeadás:	két szám összeadása egymással
+- '-' Kivonás:		két szám kivonása egymásból
+- 'X' Szorzás:		két szám szorzása egymással
+- '/' Osztás:		Két szám osztása egymással
+- '=' Eredmény:		a fenti műveletek végeredményének kiírása
