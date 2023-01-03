@@ -27,18 +27,18 @@
 3. Műveletek (egyjegyű, kétjegyű,... hétjegyűvel)	
 	3.1 összeadás					//....... tesztelje (8 lépés)
 		Teszt:
- 			1 + 1 =Tomi
-			1 + 2 =Tomi
-			12 + 12 = Tomi
-			112 + 112 = Tomi
-			1 112 + 1 112 =Tomi
-			11 112 + 11 112 =Tomi
-			111 1112 + 111 112 =Tomi
-			1 111 112 + 1 111 112 =Tomi
+ 			1 + 1 =
+			1 + 2 =
+			12 + 12 = 
+			112 + 112 = 
+			1 112 + 1 112 =
+			11 112 + 11 112 =
+			111 1112 + 111 112 =
+			1 111 112 + 1 111 112 =
 		Teszelte - Megjegyzés
 		-
 
-	3.2 kivonás					//........ tesztelje (8 lépés)
+	3.2 kivonás					//......Tomi.. OK..tesztelje (8 lépés)
 		Teszt: 
 			1 - 1 =
 			2 - 1 =
