@@ -1,0 +1,80 @@
+A szoftver célja egy egyszerű számológép biztosítása a mindennapi matematikai problémák megoldására. Mint például a havi bevételeink összegzése és a kiadások levonása.
+Egy kisboltban vásárolt termékek végösszegének meghatározása, az esetleges százalékos kedvezmények levonásával. Az alkalmazás egyértelmű, jól látható és könnyen leolvasható
+felirattal ellátott gombokkal rendelkezik. A négy alapműveletet (összeadás, szorzás, osztás, kivonás) végrehajtó gombok a számológép jobb oldalán helyezkedik el.
+A számológép felső részén a bevitt értékek és a végeredmény látható, a felület és a számok mérete lehetővé teszi a könnyű leolvasást és a bevitt értékek nyomon követését.
+Továbbá, kétféle törlési funkcióval rendelkezik. Lehetőség van arra, hogy a karaktereket egyenként töröljük, valamint a mező egy gombbal történő megtisztítására is.
+Az imént említett (karakterenként törlés, teljes törlés) gombok a számológép jobb felső sarkában helyezkednek el, egymás mellett, a lehetséges első két pozíción.
+
+!A pontos követelmény leíráshoz megbeszélés szükséges!
+
+_________________________________________________________________________________________
+
+A projekt célja egy olyan alkamazás megalkotása, amely lehetőséget nyújt a felhasználók számára, hogy egyszerűen és gyorsan végezzhessnek el akár bonyolultabb matematikai
+műveleteket is, mint például százalék számítás, esetleges kedvezmények kalkulálása. A rendszer jelenleg windows operációs rendszeren válik elérhetővel, azonban amennyiben
+a projekt sikeres későbbiekben megjelenhet más platformokon is, hiszen a java egy multiplatform programozási nyelv. A program könnyen kezelhető, letisztult és nem tartalmaz
+felesleges dizájnelemeket, ez által is megkönnyítve a program használatát akár a későbbiekben az idősebb generció számára is. A gombok alapértelmezetten a szükre árnyalatait
+veszik fel, de későbbiekben ammenyiben a projekct sikeres, felmerülhet a lehetőség ezen szín személyreszabására is. Ezeknek köszönhetően bárki könnyedén elsajátathatja a
+progrem kezelését. Későbbi verzióban megvalósításra kerülhet a színvak mód is ammennyiben igény van rá, amellyel további segítséget szeretnénk nyújtani leednő fehasználóink
+számára. A későbbi hatékonyabb használat érdekében az eredmények tárolására szolgáló funkció is megjelhet hiszen ezzel is könnyebb és használhatóbb lehet a program. Az
+eredmény tárolására szolgáló funkció igazán fontos, mivel egy hosszabb és bonyolultabb művelet elvégése után, már nem biztos, hogy a felhasználó fejben tudja tartani a 
+számításokhoz szükséges rész, illetve végeredményeket.
+
+Követelmény Specifikáció
+
+1. Áttekintés
+
+A program elsődleges célja, hogy amennyiben a windows operációs rendszeren nem lenne, vagy nem működne a beépített számológép, úgy azt ki lehessen váltani. Továbbá egy gyorsabb
+jobb és a frissítések során jobban használható számológépet létrehozni. A számológép az alapvető 4 műveletett ismeri, ami nem más mint az összeadás, a kivonás, a szorzás és az 
+osztás. A későbbeikben ezeket a műveleteket bővítenénk. A szoftver ezen felül, megkönyítheti az egyetemisták életét, hiszen egy jó számológép nélkül nem lehet diplomát szerezni.
+
+2. Jelenlegi helyzet
+
+Az alkalmazásunkra azért van szükség, mert manapság teret nyert a technológiai fejlődés. Ez nincs másképp a mindennapokban sem. Hiszen pár száz éve abakuszt használtak számolásra.
+Jelenleg különálló számológépet használunk, azonban a jövő az hogy, mindenki számítógépen vagy okostelefon számoljon. Az alapvető matematikai műveletek ismeretére és használatára
+mindenkinek szüksége van, hiszen a matematika a mindennapjaink része.
+
+3. Vágyálom rendszer
+
+A szoftver célja egy olyan rendszer, ami jól használható az élet minden területén és mindenki számára elérhető. A tervek szerint a számológép elérhető lesz több platformon is. 
+Egyszerű, letisztúlt felülettel rendelkezik a program, hogy ne zavarja a látványos világgal a felhasználók figyelmét. A későbbiekben szeretnénk adat tárolást létrehozni, azaz
+a beírt műveleteket vissza lehessen keresni, a részeredményeket le lehessen ellenőrizni.
+
+4. Funkcionális követelmények
+
+A program előnye, csak egy windows operációs rendszer futtató számítógépre van szükség, ami a mai világban egy alapvető eszköz, hisze szinte minden családban van, vagy ha nincs,
+akkor a legközelebbi könyvtársban, vagy iskolában lehetőség van a használatára.
+
+5. Rendszerre vonatkozó törvények, szabványok, ajánlások
+
+A rendszert licenszelni szeretnénk, így az arra vonatkozó szabályok a mérvadók.
+
+6. Jelenlegi üzleti folyamatok modellje
+
+A nagyvállalatok a legtöbb hasznos és könnyen használható program licensét megveszi, így az elsődleges célunk, hogy a nagyvállalatok megvegyék a számológépünk licensét.
+Ammenyiben egy cég megszeretné venni a program forráskódját, úgy nem zárkózunk el a vállalkozás eladástól sem.
+
+7. Igényelt üzleti folyamatok
+
+Weboldal létrehozása, hogy le lehessen tölteni a programot diákoknak ingyen, valamint a cégeknek és magánszemélyeknek lincens díj (havi díj) ellenében.
+
+8. Követelménylista 
+
+Alap művelet 1: összeadás
+Alap művelet 2: kivonás
+Alap művelet 3: szorzás
+Alap művelet 4: osztás
+Alap művelet 5: eredmény
+
+9. Riportok
+
+Hogyan kellene működnie az új rendszernek?
+Az új redszernek a számológép elvének megfelelően kellene működnie, kizárólag alapműveletek terén, később mint egy professzionális számológép.
+
+10. Fogalomtár
+
+Műveletek:
+- Összeadás:	két szám összeadása egymással
+- Kivonás:		két szám kivonása egymásból
+- Szorzás:		két szám szorzása egymással
+- Osztás:		Két szám osztása egymással
+- Eredmény:		a fenti műveletek végeredményének kiírása
