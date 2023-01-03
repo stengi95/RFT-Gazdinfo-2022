@@ -64,7 +64,7 @@
 		Megjegyzés
 		- OK
 
-	3.4 osztás					//......... tesztelje (8 lépés)
+	3.4 osztás					// Marci tesztelje (8 lépés)
 		Teszt: 
 			1 / 1 =
 			2 / 1 =
@@ -75,7 +75,7 @@
 			111 1112 / 111 112 =
 			1 211 112 / 1 111 112 =
 		Megjegyzés
-		-
+		- OK
 
 4. Eredmény
 	4.1 eredménylekérdezés				//Mindenki tesztelje (1 lépés)
