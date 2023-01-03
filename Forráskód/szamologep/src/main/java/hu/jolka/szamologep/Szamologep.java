@@ -169,6 +169,7 @@ public class Szamologep extends javax.swing.JFrame {
 
         teljesTorles.setBackground(new java.awt.Color(255, 51, 0));
         teljesTorles.setText("Teljes törlés");
+        teljesTorles.setBorder(null);
         teljesTorles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 teljesTorlesActionPerformed(evt);
