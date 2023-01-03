@@ -20,7 +20,7 @@
 		Teszt: Minden karakter törlése gomb használata
 		Teszelte - Megjegyzés
 		- Marci - OK
-		- 
+		- Zsani - OK
 		-
 		-
 
