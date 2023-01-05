@@ -5,7 +5,7 @@
 		- Marci - OK még Numpaddal is.
 		- Zsani - OK
 		- Jolka - ok
-		-
+		- Tomi	- ok
 
 2. Törlés						
 	2.1  Egy karakterek törlése			//Mindenki tesztelje (1 lépés)
@@ -14,7 +14,7 @@
 		- Marci - OK
 		- Zsani - OK
 		- Jolka - ok
-		-
+		- Tomi  - ok
 
 	2.2 Összes karakterek törlése			//Mindenki tesztelje (1 lépés)
 		Teszt: Minden karakter törlése gomb használata
@@ -22,7 +22,7 @@
 		- Marci - OK
 		- Zsani - OK
 		- Jolka - ok00
-		-
+		- Tomi	- ok
 
 3. Műveletek (egyjegyű, kétjegyű,... hétjegyűvel)	
 	3.1 összeadás					// Jolka tesztelje (8 lépés)
@@ -38,7 +38,7 @@
 		Megjegyzés
 		- ok
 
-	3.2 kivonás					//......Tomi.. OK..tesztelje (8 lépés)
+	3.2 kivonás					// Tomi tesztelje (8 lépés)
 		Teszt: 
 			1 - 1 =
 			2 - 1 =
@@ -49,7 +49,7 @@
 			121 1112 - 111 112 =
 			1 211 112 - 1 111 112 =
 		Megjegyzés
-		-
+		- ok
 
 	3.3 szorzás					// Zsani tesztelje (8 lépés)
 		Teszt: 
@@ -84,7 +84,7 @@
 		- Marci - OK
 		- Zsani - OK
 		- Jolka - ok Színezés is ok
-		-
+		- Tomi  - ok
 
 Teszt szereplői:		Lépésszám:
 Stenger Márton			21	
