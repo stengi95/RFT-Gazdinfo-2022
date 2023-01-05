@@ -26,8 +26,8 @@ használni.
 
 9. Forgatókönyv
 ● A forgatókönyvek a rendszer egy-egy tipikus felhasználását mutatják be. A forgatókönyvnek általában van egy célja, például egy iktató rendszerben: 
-Levél érkeztetése, címzett értesítése, dokumentumtárba helyezés. A forgatókönyv bemutatja, milyen funkciókat kell használni, milyen sorrendben a kívánt cél elérése érdekében. 
-Ilyen értelem egy telepítési útmutatóhoz hasonlítanak.
+Levél érkeztetése, címzett értesítése, dokumentumtárba helyezés. A forgatókönyv bemutatja, milyen funkciókat kell használni, milyen sorrendben a kívánt
+cél elérése érdekében. Ilyen értelem egy telepítési útmutatóhoz hasonlítanak.
 
 10.Funkció - követelmény megfeleltetés
 
@@ -36,32 +36,41 @@ Ilyen értelem egy telepítési útmutatóhoz hasonlítanak.
 ● A fogalomszótár a dokumentációban megemlített idegen esetleg nem egyértelmű jelentésű szavak / szakszavak pontos meghatározását írja le.
 
 _____________________________________________________________________________
-1. áttekintés
+1. Áttekintés
 Egy olyan programot fejlesztettünk, amely képes a mindennapjainkban előforduló matematikai alapműveletek elvégzésére.
 Az alkalmazás kialakítása lehetővé teszi, hogy az általános iskolás korosztálytól egészen a nyugdíjasokig bárki könnyedén értelmezze és használja.
-A főként kisboltokban előforduló esetekre specializált százalékszámítás funkció, rendkívül gyorsan és pontosan határozza meg a kedvezményekkel terhelt fizetendő végösszeget.
-A szoftvert természetesen ingyenesen kívánjuk forgalmazni és minden eszközre könnyedén telepíthetővé teszzük.
-Az alkalmazás használata közben a felhasználó csak az éppen beírt számértékeket látja a számológép "megjelenítő panelén".
-Az korábban elvégzett műveletek visszakeresésere, az ezen projekt keretében megalkotott alap verzióban egyenlőre nincs lehetősség.
+A főként azok számára lesz ez a rendszer nagy megváltás akik nem elégedettek a windowsba épített alap számológéppel, meg könyítheti az egyetemisták
+életét, hiszen egy jó számológép nélkül nem lehet diplomát szerezni. A szoftvert liceneselni szeretnénk nagy válalatok számámra, majd a bevételek
+Az alkalmazás használata közben a felhasználó csak az éppen beírt számértékeket látja a számológép "megjelenítő panelén", később az előző eredményt is.
+Az korábban elvégzett műveletek visszakeresésere, az ezen projekt keretében megalkotott alap verzióban nincs lehetőség, de a legújabb verzióban igen.
 
-2. jelenlegi helyzet
+2. Jelenlegi helyzet
 Az előzetes felmérések alapján hatlmas igény van az egyszerűen és gyorsan alkalmazható számológépre.
-Hiszen XXI.-ban már minden okostelefonon találhatunk (legtöbbször nem megfelelően műköfő) ún. okos számológépeket, amelyeknek funkcióit a felhasználok 90% sosem használja ki. Valamint a kiskereskedelemi iparban is találhatunk számos olyan kisvállalkozót, aki nem szeretne  méregdrága számológépet, magas matematikai műveletek elvégzésére alkalmas funkciókkal.
-A rendszer mindkét célcsoport számára egy lehetséges megoldást biztosít. Az előzetes felmérések és értékelések alapján a megrendelőink rendkívül elégedettek a szoftver prototípusával  és elmondásuk alapján már régóta vágytak egy ilyen programra. Már rengeteg számológépet kipróbáltak, kezdve egészen az interneten elérhető webes alkalmazásoktól a telefonra telepíthető androidos alkalmazásokig, azonban egyik sem váltotta be a hozzájuk fűzött reményeket.
+Hiszen XXI.-ban már minden okostelefonon találhatunk (legtöbbször nem megfelelően műköfő) ún. okos számológépeket, amelyeknek funkcióit a felhasználok 90% sosem
+használja ki. Valamint a kiskereskedelemi iparban is találhatunk számos olyan kisvállalkozót, aki nem szeretne  méregdrága számológépet, magas matematikai műveletek
+elvégzésére alkalmas funkciókkal. A rendszer mindkét célcsoport számára egy lehetséges megoldást biztosít. Az előzetes felmérések és értékelések alapján a megrendelőink
+rendkívül elégedettek a szoftver prototípusával  és elmondásuk alapján már régóta vágytak egy ilyen programra. Már rengeteg számológépet kipróbáltak, kezdve egészen az
+interneten elérhető webes alkalmazásoktól a telefonra telepíthető androidos alkalmazásokig, azonban egyik sem váltotta be a hozzájuk fűzött reményeket.
 
-3. követelmény lista
-Jogosultság K1 -> nem szükséges bejelentkezni, ez egy vastag kliens windowsban futtatható alkalmazás
-Számítás típus K2 -> 4 alapművelet használata
-Számítási típus K3 -> százalékos kedvezmény levonása
+3. Követelmény lista
+Windows operációs rendszert futtató számítógép.
+Jogosultság nem szükséges hiszen, ez egy vastag kliens windowsban futtatható alkalmazás
 
-4. jelenlegi folyamat modellje
-A mai világban már majdnem minden generáció képes használni a különböző új találmányokat, fejlesztéseket.
-Ezek alól kivételt képez az idősebb genereció, akik még a napjainkban használt technológiák helyett, a régebbi "maradi" eszközökhöz fordulnak egy-egy probléma megolásával. Legtöbbször ők papír, vagy fejben számolnak amely nem túlságosan effektív.
+4. Jelenlegi folyamat modellje
+A mai világban már majdnem minden generáció képes használni a különböző új találmányokat, fejlesztéseket. Ezek alól kivételt képez az idősebb genereció, akik még a napjainkban
+használt technológiák helyett, a régebbi "maradi" eszközökhöz fordulnak egy-egy probléma megolásával. Legtöbbször ők papír, vagy fejben számolnak amely nem túlságosan effektív.
+A későbbiekben érdemes lenne a nagyvállalatok mellett ebbe az irányba is elindulni.
 
-5. igényelt üzleti folyamat modellje
-Azért hogy egyszerűbbé tegyük az idősebb generáció számára a mindennapi számtani "problémák" megoldását, létrehozuk ezt az alkalmazást, amely a mai kornak megfelelően helyt áll az elektronika világában. A felhasználóknak egyszerűbb lesz a számolást elvégezen ezen program segítségével, mivel kinézete letisztult, valamint kezelése egyértelmű.
-Ezenek felül a felhasználók segítő kezet nyújthatnak mások matematikai problémainak megoldásában, többek között az unokák házifeladatában is.
+5. Igényelt üzleti folyamat modellje
+Azért hogy egyszerűbbé tegyük az egyetemisták, a windows számológépből kiábrándultak üzletemberek és az idősebb generáció számára a mindennapi számtani "problémák" megoldását,
+létrehozuk ezt az alkalmazást, amely a mai kornak megfelelően helyt áll az elektronika világában. A felhasználóknak egyszerűbb lesz a számolást elvégezen ezen program
+segítségével, mivel kinézete letisztult, valamint kezelése egyértelmű.
+A rendszer a nagyvállalatok üzletembereinek segít mindenfélét számolni, az egyetemistáknak megoldani a sok matematika alapú egyetemi tárgyat, valamint ezenek felül az idősebb
+felhasználók segítő kezet nyújthatnak mások matematikai problémainak megoldásában, többek között az unokák házifeladatában is.
 
-6. használati esetek
-A program teljeskörű használatóhoz a felhasználónak nem szükséges belépnie. A funkciók mindenki számára egyaránt elérhetőek és használhatóak.
-Ezek között szerepel a négy alapművelet: összeadás, kivonás, szorzás, osztás, valamint a kezdvezmények kiszámítása is.
+6. Használati esetek
+A program teljeskörű használatóhoz a felhasználónak nem szükséges belépnie. Hiszen egy futtatható alkalmazás. A funkciók mindenki számára egyaránt elérhetőek és használhatóak.
+Ezek között szerepel a négy alapművelet: összeadás '+', kivonás '-', szorzás 'X', osztás '/', valamint az eredmény kiíratása '='.
+
+7. Megfeleltetés
+Az alapműveletekkel szinte minden matematika műveletet végre lehet hajtani, később érdemes lesz az alkalmazást frissíteni egy tudományos nézettel.
